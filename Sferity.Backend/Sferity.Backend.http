@@ -1,0 +1,6 @@
+@Sferity.Backend_HostAddress = http://localhost:5100
+
+GET {{Sferity.Backend_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
