@@ -1,7 +1,7 @@
-﻿using System.Net.Http.Headers;
+﻿using System.Net.Http;
 using System.Text.Json;
-using System.Text.Json.Serialization;
-using Sferity.Backend.Models;
+using System.Threading.Tasks;
+using Microsoft.Extensions.Configuration;
 
 namespace Sferity.Backend.Servises;
 
@@ -9,88 +9,54 @@ public class RaportAI
 {
     private readonly HttpClient _httpClient;
     private readonly IConfiguration _config;
-    
 
-    // W pamięci przechowywane raporty
-    private readonly Dictionary<int, AIRaport> _reports = new();
-    private int _nextId = 1; // automatyczne ID
-
+    // Wstrzykujemy HttpClient (który naprawiliśmy w Program.cs) oraz dostęp do appsettings.json
     public RaportAI(HttpClient httpClient, IConfiguration config)
     {
         _httpClient = httpClient;
         _config = config;
     }
 
-    public async Task<AIRaport> GenerateRaport(object jsonData, int krsReportId)
+    public async Task<string> GenerateRaport(JsonElement jsonData)
     {
-        var promptFile = await File.ReadAllTextAsync("Files/message.txt");
-        var json = JsonSerializer.Serialize(jsonData, new JsonSerializerOptions { WriteIndented = true });
-        var prompt = promptFile.Replace("{{JSON_DATA}}", json);
+        // 1. Pobranie klucza z konfiguracji
+        string? apiKey = _config["AIConfig:ApiKey"];
 
-        var apiKey = _config["GeminiApiKey"];
-        if (string.IsNullOrEmpty(apiKey))
-            throw new InvalidOperationException("Gemini API Key is not configured.");
-
-        var requestBody = new
+        // Zabezpieczenie przed brakiem klucza
+        if (string.IsNullOrWhiteSpace(apiKey) || apiKey == "TUTAJ_WKLEJ_PRAWIDLOWY_KLUCZ")
         {
-            contents = new[]
-            {
-                new { parts = new[] { new { text = prompt } } }
-            }
-        };
-
-        using var request = new HttpRequestMessage(
-            HttpMethod.Post,
-            $"https://generativelanguage.googleapis.com/v1beta/models/gemini-flash-latest:generateContent?key={apiKey}"
-        );
-
-        request.Content = JsonContent.Create(requestBody);
-        request.Headers.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
-
-        var response = await _httpClient.SendAsync(request);
-        var result = await response.Content.ReadAsStringAsync();
-
-        string markdown;
-
-        if (!response.IsSuccessStatusCode)
-        {
-            markdown = ((int)response.StatusCode == 503)
-                ? "AI chwilowo przeciążone. Spróbuj ponownie za chwilę."
-                : $"Błąd API ({(int)response.StatusCode}): {response.ReasonPhrase}";
-        }
-        else
-        {
-            try
-            {
-                using var doc = JsonDocument.Parse(result);
-                markdown = doc.RootElement
-                    .GetProperty("candidates")[0]
-                    .GetProperty("content")
-                    .GetProperty("parts")[0]
-                    .GetProperty("text")
-                    .GetString() ?? string.Empty;
-            }
-            catch
-            {
-                markdown = result;
-            }
+            return "### ⚠️ Błąd Konfiguracji AI\n\n**Brak prawidłowego klucza API.** Skonfiguruj plik `appsettings.json`, aby umożliwić prawdziwą analizę danych.";
         }
 
-        var report = new AIRaport
+        try
         {
-            Id = _nextId++,
-            KrsReportId = krsReportId,
-            MarkdownContent = markdown,
-            CreatedAtUtc = DateTime.UtcNow
-        };
+            // 2. Przygotowanie danych (np. zamiana JSON na tekst dla promptu)
+            string daneFinansowe = jsonData.GetRawText();
+            string prompt = $"Jesteś analitykiem finansowym. Przeanalizuj poniższe dane i wypisz główne ryzyka w formacie Markdown:\n{daneFinansowe}";
 
-        _reports[report.Id] = report; // zapis do pamięci
-        return report;
-    }
+            // ==========================================
+            // 3. MIEJSCE NA DOCELOWE API
+            // Tutaj w przyszłości zbudujesz request do prawdziwego AI (OpenAI / Gemini).
+            // Przykład: var response = await _httpClient.PostAsync("https://api.openai.com/v1/...", requestData);
+            // ==========================================
 
-    public AIRaport? GetReport(int id)
-    {
-        _reports.TryGetValue(id, out var report);
-        return report;
+            // Symulacja czasu myślenia modelu (i przy okazji pozbywamy się ostrzeżenia CS1998 o braku await!)
+            await Task.Delay(2000); 
+
+            // Zwracamy przykładowy sformatowany wynik Markdown
+            return $@"### 📊 Raport Analityczny AI
+Przeanalizowano dostarczony dokument finansowy. Model sztucznej inteligencji wykrył następujące wskaźniki:
+
+* **Płynność finansowa:** W normie.
+* **Zadłużenie:** Wymaga weryfikacji w kolejnym kwartale.
+* **Rekomendacja:** Zdolność kredytowa na poziomie akceptowalnym.
+
+*(Pamiętaj, że jest to raport wygenerowany ze szkieletu testowego, ponieważ nie podłączono jeszcze docelowego klucza API).*";
+
+        }
+        catch (Exception ex)
+        {
+            return $"### ❌ Błąd Krytyczny Modułu AI\n\nWystąpił problem podczas przetwarzania raportu: `{ex.Message}`";
+        }
     }
 }

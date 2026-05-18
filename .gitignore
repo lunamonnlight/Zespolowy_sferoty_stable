@@ -3,3 +3,6 @@ obj/
 /packages/
 riderModule.iml
 /_ReSharper.Caches/
+# Ignorujemy pliki z tajnymi kluczami
+appsettings.json
+appsettings.Development.json

@@ -1,4 +1,4 @@
-﻿POST https://localhost:5100/FinancialReport/reportAnalyze
+﻿POST http://localhost:5100/FinancialReport/reportAnalyze
 Content-Type: multipart/form-data; boundary=boundary
 
 --boundary

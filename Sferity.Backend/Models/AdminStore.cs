@@ -9,6 +9,8 @@ public class AdminStore
     public List<AdminFund> Funds { get; set; } = new();
     public List<AdminLog> Logs { get; set; } = new();
     public List<SearchLog> SearchLogs { get; set; } = new(); // Nowa lista
+    public List<PromoCode> PromoCodes { get; set; } = new();
+    
 }
 
 public class AdminUser
