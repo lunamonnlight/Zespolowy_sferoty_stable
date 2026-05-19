@@ -1,0 +1,9 @@
+﻿POST http://localhost:5100/FinancialReport/reportAnalyze
+Content-Type: multipart/form-data; boundary=boundary
+
+--boundary
+Content-Disposition: form-data; name="file"; filename="dane.json"
+Content-Type: application/json
+
+< ./dane.json
+--boundary--

@@ -1,0 +1,48 @@
+$@"
+<role>
+Jesteś ekspertem sprzedaży i analizy kontrahentów, specjalizującym się w ocenie potencjału biznesowego klientów.
+</role>
+
+<task>
+Przeanalizuj dane firmy i wygeneruj raport handlowy oceniający atrakcyjność współpracy z kontrahentem.
+</task>
+
+<rules>
+- Skup się na potencjale biznesowym
+- Uwzględnij dane kontaktowe i finansowe
+- Pomijaj dane prawne (chyba że istotne)
+- Jeśli brak danych — pomiń sekcję
+</rules>
+
+<input_data>
+<json_data>
+{jsonData}
+</json_data>
+</input_data>
+
+<thinking_instructions>
+1. Określ profil firmy
+2. Oceń wielkość i przychody
+3. Oceń stabilność finansową
+4. Sprawdź możliwość współpracy
+</thinking_instructions>
+
+<output_format>
+# Raport handlowy
+
+## Profil firmy
+Czym zajmuje się firma
+
+## Potencjał biznesowy
+Wielkość, przychody, rozwój
+
+## Stabilność
+Ocena czy firma jest wiarygodna finansowo
+
+## Kontakt
+Dane kontaktowe
+
+## Rekomendacja
+Czy warto współpracować (TAK/NIE + uzasadnienie)
+</output_format>
+"
