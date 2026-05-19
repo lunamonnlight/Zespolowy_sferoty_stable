@@ -1,0 +1,220 @@
+﻿{
+  "PodstawoweInformacje": {
+    "id": 53744,
+    "nazwy": {
+      "pelna": "\"ITM\" SPÓŁKA Z OGRANICZONĄ ODPOWIEDZIALNOŚCIĄ",
+      "skrocona": "ITM"
+    },
+    "numery": {
+      "duns": 522781939,
+      "Krs": "twojastararuchakonia",
+      "nip": 7392854679,
+      "regon": 510663071
+    },
+    "stan": {
+      "czy_dofinansowana_przez_ue": true,
+      "czy_jest_na_gwp": null,
+      "czy_otrzymala_pomoc_publiczna": true,
+      "czy_pozytku_publicznego": false,
+      "czy_spolka_skarbu_panstwa": false,
+      "czy_wykreslona": false,
+      "forma_prawna": "SPÓŁKA Z OGRANICZONĄ ODPOWIEDZIALNOŚCIĄ",
+      "pkd_przewazajace_dzial": "Działalność związana z oprogramowaniem i doradztwem w zakresie informatyki oraz działalność powiązana",
+      "w_likwidacji": false,
+      "w_upadlosci": false,
+      "w_zawieszeniu": false,
+      "wielkosc": "duza_srednia"
+    },
+    "glowna_osoba": {
+      "id": 1318863,
+      "imiona_i_nazwisko": "Dariusz Racz"
+    },
+    "adres": {
+      "kod": "10-762",
+      "miejscowosc": "Olsztyn",
+      "nr_domu": "13",
+      "nr_mieszkania": null,
+      "panstwo": "Polska",
+      "poczta": "Olsztyn",
+      "ulica": "Wawrzyczka"
+    },
+    "kontakt": {
+      "emaile": [
+        "itm@itm.com.pl"
+      ],
+      "www": "http://itm.com.pl"
+    },
+    "krs_rejestry": {
+      "rejestr_przedsiebiorcow_data_wpisu": "2001-10-17",
+      "rejestr_przedsiebiorcow_data_wykreslenia": null,
+      "rejestr_stowarzyszen_data_wpisu": null,
+      "rejestr_stowarzyszen_data_wykreslenia": null
+    },
+    "krs_wpisy": {
+      "najnowszy_data": "2025-06-30",
+      "najnowszy_numer": 45,
+      "najnowszy_przed_wykresleniem_data": null,
+      "najnowszy_przed_wykresleniem_numer": null,
+      "pierwszy_data": "2001-10-17",
+      "wykreslenie_uprawomocnienie_data": null
+    },
+    "krs_powiazania_liczby": {
+      "aktualne": 3,
+      "przeszle": 0
+    },
+    "metadane": {
+      "krs_odpis_synchronizacja_data_czas": "2025-12-25 12:24:52",
+      "krs_rozdzialy_dostepne": [
+        "ogolny",
+        "przeksztalcenia",
+        "wzmianki"
+      ]
+    },
+    "typ": "organizacja"
+  },
+  "VatDane": null,
+  "PowiazaniaOrganizacji": null,
+  "RaportFinansowy": {
+    "RaportFinansowy": [
+      {
+        "Rok": 2024,
+        "AktywaNetto": 6386712.91,
+        "Przychody": 4939693.74,
+        "Plynnosc": {
+          "PlynnoscBiezaca": 23.49751816707104,
+          "PlynnoscSzybka": 23.49751816707104,
+          "PlynnoscNatychmiastowa": 19.928266825716504
+        },
+        "Zyski": {
+          "ZyskOperacyjny": 253524.82,
+          "ZyskDzialanoscDodatkowa": 7891.1,
+          "ZyskFinansowy": -60550.39,
+          "ZyskOgolem": 157855.43
+        },
+        "Marze": {
+          "MarzaBrutto": 3.906607173585624,
+          "MarzaOperacyjna": 5.132399564512273,
+          "MarzaNetto": 3.19565216607943
+        },
+        "Rotacja": {
+          "RotacjaZobowiazan": 15.915984030216416,
+          "RotacjaNaleznosci": 53.541674156503476
+        },
+        "Stany": {
+          "StanGotowkiWKasie": 4278600.04,
+          "SrodkiPieniezneOrazInneAktywaPieniezne": 4280770.67,
+          "StanZapasow": 0.0,
+          "StanNaleznosci": 722621.51,
+          "Towary": 0.0,
+          "StanZobowiazan": 214808.98,
+          "KredytyPozyczkiKrotkoterminowe": 0.0,
+          "KredytyPozyczkiDlugoterminowe": 0.0,
+          "UdzielonePozyczkiKrotkoterminowe": 0.0,
+          "UdzielonePozyczkiDlugoterminowe": 0.0
+        }
+      },
+      {
+        "Rok": 2023,
+        "AktywaNetto": 6228857.48,
+        "Przychody": 5214471.84,
+        "Plynnosc": {
+          "PlynnoscBiezaca": 29.619701382581317,
+          "PlynnoscSzybka": 29.619701382581317,
+          "PlynnoscNatychmiastowa": 24.091715103468316
+        },
+        "Zyski": {
+          "ZyskOperacyjny": 525869.53,
+          "ZyskDzialanoscDodatkowa": 95610.87,
+          "ZyskFinansowy": 3177.48,
+          "ZyskOgolem": 456299.01
+        },
+        "Marze": {
+          "MarzaBrutto": 10.14574488525764,
+          "MarzaOperacyjna": 10.08480908777906,
+          "MarzaNetto": 8.750627561160633
+        },
+        "Rotacja": {
+          "RotacjaZobowiazan": 11.340902782591305,
+          "RotacjaNaleznosci": 57.77673843953485
+        },
+        "Stany": {
+          "StanGotowkiWKasie": 3899539.31,
+          "SrodkiPieniezneOrazInneAktywaPieniezne": 3903307.88,
+          "StanZapasow": 0.0,
+          "StanNaleznosci": 825411.44,
+          "Towary": 0.0,
+          "StanZobowiazan": 162018.68,
+          "KredytyPozyczkiKrotkoterminowe": 0.0,
+          "KredytyPozyczkiDlugoterminowe": 0.0,
+          "UdzielonePozyczkiKrotkoterminowe": 0.0,
+          "UdzielonePozyczkiDlugoterminowe": 0.0
+        }
+      },
+      {
+        "Rok": 2022,
+        "AktywaNetto": 5772558.47,
+        "Przychody": 4927633.3,
+        "Plynnosc": {
+          "PlynnoscBiezaca": 16.02501624691423,
+          "PlynnoscSzybka": 16.02501624691423,
+          "PlynnoscNatychmiastowa": 13.18531649046076
+        },
+        "Zyski": {
+          "ZyskOperacyjny": 398616.63,
+          "ZyskDzialanoscDodatkowa": 49841.76,
+          "ZyskFinansowy": 38236.14,
+          "ZyskOgolem": 385556.27
+        },
+        "Marze": {
+          "MarzaBrutto": 8.865356722059655,
+          "MarzaOperacyjna": 8.089413430987245,
+          "MarzaNetto": 7.824370169752688
+        },
+        "Rotacja": {
+          "RotacjaZobowiazan": 20.735000552902344,
+          "RotacjaNaleznosci": 54.79080741458582
+        },
+        "Stany": {
+          "StanGotowkiWKasie": 3683047.35,
+          "SrodkiPieniezneOrazInneAktywaPieniezne": 3690966.7,
+          "StanZapasow": 0.0,
+          "StanNaleznosci": 739695.91,
+          "Towary": 0.0,
+          "StanZobowiazan": 279930.08,
+          "KredytyPozyczkiKrotkoterminowe": 0.0,
+          "KredytyPozyczkiDlugoterminowe": 0.0,
+          "UdzielonePozyczkiKrotkoterminowe": 0.0,
+          "UdzielonePozyczkiDlugoterminowe": 0.0
+        }
+      }
+    ],
+    "ListaDokumentow": [
+      {
+        "CzyMaJson": true,
+        "Id": 17305993,
+        "Nazwa": "Bilans",
+        "Year": 2024
+      },
+      {
+        "CzyMaJson": true,
+        "Id": 17305992,
+        "Nazwa": "Rachunek zysków i strat",
+        "Year": 2024
+      },
+      {
+        "CzyMaJson": true,
+        "Id": 14827865,
+        "Nazwa": "Bilans",
+        "Year": 2023
+      },
+      {
+        "CzyMaJson": true,
+        "Id": 14827864,
+        "Nazwa": "Rachunek zysków i strat",
+        "Year": 2023
+      }
+    ]
+  },
+  "StatusOrganizacji": null,
+  "BeneficjenciRzeczywisci": null
+}
