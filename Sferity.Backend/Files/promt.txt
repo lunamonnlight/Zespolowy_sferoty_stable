@@ -36,6 +36,8 @@
         - Jeśli brakuje danych dla konkretnej pozycji, wpisz ""b/d""
         - Jeśli sekcji nie da się wypełnić z powodu braku danych, pomiń ją całkowicie
         - Jeśli rok nie występuje w danych, pomiń go w tabeli
+        - NIE zwracaj uwage na true/false w polu ListaSankcyjna
+        - NIE zwracaj uwage na pola z wartościami null, pomiń je
         </rules>
         
         {margeInstructions}
@@ -62,47 +64,11 @@
         
         Struktura raportu:
         
-        # Raport weryfikacji kontrahenta
-        
         ## Podsumowanie wykonawcze
         Zwięzłe podsumowanie (2–4 zdania): główny profil działalności, ogólna ocena kondycji finansowej.
         
         ## Kluczowe informacje
         Lista 5–7 najważniejszych faktów: forma prawna, data rejestracji, kapitał zakładowy, główny PKD, liczba zatrudnionych, status VAT, siedziba.
-        
-        ## Analiza finansowa
-        
-        ### Zestawienie danych finansowych
-        
-        Tabela Markdown z maksymalnie 3 ostatnimi latami, uporządkowanymi malejąco od lewej.
-        
-        Kolumna ""Dynamika zmian %"" = procentowa zmiana między rokiem najstarszym (bazowym) a najnowszym.
-        Jeśli nie można obliczyć (dzielenie przez zero, brak danych), wpisz ""b/d"".
-        
-        | Pozycja | [Rok Najnowszy] | [Rok Środkowy] | [Rok Najstarszy] | Dynamika zmian %&lt;br&gt;&lt;small&gt;(w badanym okresie)&lt;/small&gt; |
-        |:---|---:|---:|---:|---:|
-        | **Aktywa netto** | | | | |
-        | **Przychody ze sprzedaży** | | | | |
-        | **Zysk/strata netto** | | | | |
-        | **Zysk/strata operacyjny** | | | | |
-        | **Zysk/strata ze sprzedaży** | | | | |
-        | **Zysk/strata z działalności finansowej** | | | | |
-        | **Wskaźnik płynności bieżącej** | | | | |
-        | **Wskaźnik płynności szybkiej** | | | | |
-        | **Wskaźnik płynności gotówkowej** | | | | |
-        | **Rotacja należności (dni)** | | | | |
-        | **Rotacja zobowiązań (dni)** | | | | |
-        | **Cykl konwersji gotówki (dni)** | | | | |
-        | **Marża brutto ze sprzedaży (%)** | | | | |
-        | **Marża operacyjna (%)** | | | | |
-        | **Marża netto (%)** | | | | |
-        | **Zapasy** | | | | |
-        | **Należności krótkoterminowe** | | | | |
-        | **Środki pieniężne** | | | | |
-        | **Kredyty i pożyczki otrzymane** | | | | |
-        | **Pożyczki udzielone** | | | | |
-        | **Zobowiązania krótkoterminowe** | | | | |
-        | **Kapitał własny** | | | | |
         
         ### Wnioski i ocena kondycji finansowej
         

@@ -2,16 +2,6 @@
 
 namespace Sferity.Backend.Models;
 
-// ─── Rejestr.io v2 – modele wejściowe (camelCase, zagnieżdżona struktura) ────
-//
-// Format: powiazaniaOrganizacji.aktualne.{
-//   powiazaneOrganizacje[]       – organizacje powiązane z podmiotem
-//   powiazaneOsobyZProfilem[]    – osoby z numerem PESEL
-//   powiazaneOsobyBezProfilu[]   – osoby bez numeru PESEL (zagraniczni)
-// }
-//
-// Wszystkie nazwy pól są camelCase (w odróżnieniu od starszego API snake_case).
-
 // ── Wspólne ───────────────────────────────────────────────────────────────────
 
 public class PowiazanieKwerendowane
@@ -64,8 +54,7 @@ public class Tozsamosc
 
     [JsonPropertyName("plec")]
     public string? Plec { get; set; }
-
-    /// <summary>Pełne imię i nazwisko sklejone pomocniczo (nie ma w JSON, liczone w runtime).</summary>
+    
     [JsonIgnore]
     public string ImionaINazwisko =>
         string.Join(" ", new string?[] { Imie, DrugieImiona, Nazwisko }
@@ -74,10 +63,6 @@ public class Tozsamosc
 
 // ── Osoba ─────────────────────────────────────────────────────────────────────
 
-/// <summary>
-/// Reprezentuje osobę z profilem (PESEL znany) lub bez profilu.
-/// Typ "osoba" | "osoba-bez-pesel" — oba obsługiwane jedną klasą.
-/// </summary>
 public class OsobaPowiazana
 {
     [JsonPropertyName("id")]
@@ -170,7 +155,6 @@ public class PowiazaniaStan
 
 public class PowiazaniaGlownaOsoba
 {
-    /// <summary>int w nowym API (był string w starym).</summary>
     [JsonPropertyName("id")]
     public int Id { get; set; }
 
@@ -222,7 +206,6 @@ public class PowiazaniaAktualne
     public List<OsobaPowiazana> PowiazaneOsobyBezProfilu { get; set; } = [];
 
     /// <summary>Wszystkie osoby (z profilem i bez) jako jedna lista.</summary>
-    /// Null-safe: listy mogą być null gdy deserializator nie wypełnił pola.
     [JsonIgnore]
     public IEnumerable<OsobaPowiazana> WszystkieOsoby =>
         (PowiazaneOsobyZProfilem ?? []).Concat(PowiazaneOsobyBezProfilu ?? []);
@@ -236,7 +219,6 @@ public class PowiazaniaOrganizacji
 
 /// <summary>
 /// Dane firmy będącej centrum grafu (podmiot, którego powiązania opisuje plik).
-/// Pole opcjonalne – gdy nieobecne w JSON, centrum jest konstruowane z appsettings.
 /// </summary>
 public class CentrumFirmy
 {
@@ -261,7 +243,6 @@ public class DaneRoot
 {
     /// <summary>
     /// Opcjonalne metadane firmy-centrum (np. Allegro).
-    /// Gdy nieobecne, centrum jest konstruowane z konfiguracji appsettings (Centrum:Nazwa).
     /// </summary>
     [JsonPropertyName("centrum")]
     public CentrumFirmy? Centrum { get; set; }
@@ -304,12 +285,9 @@ public sealed record NodeDataDto
     public bool    IsActive     { get; init; } = true;
     public bool    WLikwidacji  { get; init; }
     public bool    WUpadlosci   { get; init; }
-    /// <summary>true gdy osoba-bez-pesel (brak pełnego profilu w rejestrze).</summary>
     public bool    BezProfilu   { get; init; }
-    /// <summary>true dla węzła centrum grafu (firma której powiązania oglądamy).</summary>
     public bool    IsCentrum    { get; init; }
-    /// <summary>true dla organizacji-córek (Allegro ma w nich udziały, KRS_SHAREHOLDER PASYWNY).</summary>
-    public bool    IsSubsidiary { get; init; }
+    public bool IsSubsidiary { get; set; }
 }
 
 public sealed record EdgeDto
@@ -339,6 +317,7 @@ public record EntitySummaryDto
     public string  Label      { get; init; } = string.Empty;
     public string  EntityType { get; init; } = string.Empty;
     public string? Krs        { get; init; }
+    public string? Nip        { get; init; }
 }
 
 public record EntityDetailDto : EntitySummaryDto

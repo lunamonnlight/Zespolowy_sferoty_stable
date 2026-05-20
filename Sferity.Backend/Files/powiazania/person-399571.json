@@ -1,0 +1,514 @@
+{
+  "powiazaniaOrganizacji": {
+    "aktualne": {
+      "powiazaneOrganizacje": [
+        {
+          "id": 635012,
+          "nazwy": {
+            "pelna": "ALLEGRO.EU SPÓŁKA Z OGRANICZONĄ ODPOWIEDZIALNOŚCIĄ",
+            "skrocona": "ALLEGRO"
+          },
+          "numery": {
+            "duns": null,
+            "krs": "635012",
+            "nip": "5252674798",
+            "regon": "386767283"
+          },
+          "stan": {
+            "czyDofinansowanaPrzezUe": false,
+            "czyJestNaGwp": false,
+            "czyOtrzymalaPomocPubliczna": false,
+            "czyPozytkuPublicznego": false,
+            "czySpolkaSkarbuPanstwa": false,
+            "czyWykreslona": false,
+            "formaPrawna": "SPÓŁKA Z OGRANICZONĄ ODPOWIEDZIALNOŚCIĄ",
+            "pkdPrzewazajaceDzial": "Sprzedaż detaliczna prowadzona przez domy sprzedaży wysyłkowej lub Internet",
+            "wLikwidacji": false,
+            "wUpadlosci": false,
+            "wZawieszeniu": false,
+            "wielkosc": "duza_srednia"
+          },
+          "glownaOsoba": {
+            "id": 1139891,
+            "imionaINazwisko": "Marcin Kuśmierz"
+          },
+          "adres": {
+            "kod": "00-001",
+            "miejscowosc": "Warszawa",
+            "nrDomu": "11",
+            "nrMieszkania": "",
+            "panstwo": "Polska",
+            "poczta": "Warszawa",
+            "ulica": "Ratuszowa"
+          },
+          "kontakt": {
+            "emaile": [],
+            "www": ""
+          },
+          "krsRejestry": {
+            "rejestrPrzedsiebiorcowDataWpisu": "2010-01-01",
+            "rejestrPrzedsiebiorcowDataWykreslenia": "",
+            "rejestrStowarzyszenDataWpisu": "",
+            "rejestrStowarzyszenDataWykreslenia": ""
+          },
+          "krsWpisy": {
+            "najnowszyData": "2024-01-01",
+            "najnowszyNumer": 10,
+            "najnowszyPrzedWykresleniemData": "",
+            "najnowszyPrzedWykresleniemNumer": null,
+            "pierwszyData": "2010-01-01",
+            "wykresleniUprawomocnienieData": ""
+          },
+          "krsPowiazaniaLiczby": {
+            "aktualne": 2,
+            "przeszle": 12
+          },
+          "typ": "organizacja",
+          "krsPowiazaniaKwerendowane": [
+            {
+              "dataStart": "2024-07-11",
+              "dataKoniec": null,
+              "kierunek": "PASYWNY",
+              "opis": "",
+              "typ": "KRS_PROXY"
+            }
+          ]
+        },
+        {
+          "id": 9912001,
+          "nazwy": {
+            "pelna": "ALLEGRO PAY SPÓŁKA Z OGRANICZONĄ ODPOWIEDZIALNOŚCIĄ",
+            "skrocona": "ALLEGRO PAY"
+          },
+          "numery": {
+            "duns": null,
+            "krs": "0000991200",
+            "nip": "5272914433",
+            "regon": "389100200"
+          },
+          "stan": {
+            "czyDofinansowanaPrzezUe": false,
+            "czyJestNaGwp": false,
+            "czyOtrzymalaPomocPubliczna": false,
+            "czyPozytkuPublicznego": false,
+            "czySpolkaSkarbuPanstwa": false,
+            "czyWykreslona": false,
+            "formaPrawna": "SPÓŁKA Z OGRANICZONĄ ODPOWIEDZIALNOŚCIĄ",
+            "pkdPrzewazajaceDzial": "Pozostała finansowa działalność usługowa",
+            "wLikwidacji": false,
+            "wUpadlosci": false,
+            "wZawieszeniu": false,
+            "wielkosc": "duza_srednia"
+          },
+          "glownaOsoba": {
+            "id": 1139891,
+            "imionaINazwisko": "Marcin Kuśmierz"
+          },
+          "adres": {
+            "kod": "00-001",
+            "miejscowosc": "Warszawa",
+            "nrDomu": "11",
+            "nrMieszkania": "",
+            "panstwo": "Polska",
+            "poczta": "Warszawa",
+            "ulica": "Ratuszowa"
+          },
+          "kontakt": {
+            "emaile": [],
+            "www": ""
+          },
+          "krsRejestry": {
+            "rejestrPrzedsiebiorcowDataWpisu": "2010-01-01",
+            "rejestrPrzedsiebiorcowDataWykreslenia": "",
+            "rejestrStowarzyszenDataWpisu": "",
+            "rejestrStowarzyszenDataWykreslenia": ""
+          },
+          "krsWpisy": {
+            "najnowszyData": "2024-01-01",
+            "najnowszyNumer": 10,
+            "najnowszyPrzedWykresleniemData": "",
+            "najnowszyPrzedWykresleniemNumer": null,
+            "pierwszyData": "2010-01-01",
+            "wykresleniUprawomocnienieData": ""
+          },
+          "krsPowiazaniaLiczby": {
+            "aktualne": 2,
+            "przeszle": 3
+          },
+          "typ": "organizacja",
+          "krsPowiazaniaKwerendowane": [
+            {
+              "dataStart": "2024-07-11",
+              "dataKoniec": null,
+              "kierunek": "PASYWNY",
+              "opis": "",
+              "typ": "KRS_PROXY"
+            }
+          ]
+        },
+        {
+          "id": 8823401,
+          "nazwy": {
+            "pelna": "ALLEGRO FINANCE SPÓŁKA Z OGRANICZONĄ ODPOWIEDZIALNOŚCIĄ",
+            "skrocona": "ALLEGRO FINANCE"
+          },
+          "numery": {
+            "duns": null,
+            "krs": "0000882340",
+            "nip": "5272955512",
+            "regon": "388900100"
+          },
+          "stan": {
+            "czyDofinansowanaPrzezUe": false,
+            "czyJestNaGwp": false,
+            "czyOtrzymalaPomocPubliczna": false,
+            "czyPozytkuPublicznego": false,
+            "czySpolkaSkarbuPanstwa": false,
+            "czyWykreslona": false,
+            "formaPrawna": "SPÓŁKA Z OGRANICZONĄ ODPOWIEDZIALNOŚCIĄ",
+            "pkdPrzewazajaceDzial": "Pozostałe pośrednictwo pieniężne",
+            "wLikwidacji": false,
+            "wUpadlosci": false,
+            "wZawieszeniu": false,
+            "wielkosc": "duza_srednia"
+          },
+          "glownaOsoba": {
+            "id": 1139891,
+            "imionaINazwisko": "Marcin Kuśmierz"
+          },
+          "adres": {
+            "kod": "00-001",
+            "miejscowosc": "Warszawa",
+            "nrDomu": "11",
+            "nrMieszkania": "",
+            "panstwo": "Polska",
+            "poczta": "Warszawa",
+            "ulica": "Ratuszowa"
+          },
+          "kontakt": {
+            "emaile": [],
+            "www": ""
+          },
+          "krsRejestry": {
+            "rejestrPrzedsiebiorcowDataWpisu": "2010-01-01",
+            "rejestrPrzedsiebiorcowDataWykreslenia": "",
+            "rejestrStowarzyszenDataWpisu": "",
+            "rejestrStowarzyszenDataWykreslenia": ""
+          },
+          "krsWpisy": {
+            "najnowszyData": "2024-01-01",
+            "najnowszyNumer": 10,
+            "najnowszyPrzedWykresleniemData": "",
+            "najnowszyPrzedWykresleniemNumer": null,
+            "pierwszyData": "2010-01-01",
+            "wykresleniUprawomocnienieData": ""
+          },
+          "krsPowiazaniaLiczby": {
+            "aktualne": 2,
+            "przeszle": 2
+          },
+          "typ": "organizacja",
+          "krsPowiazaniaKwerendowane": [
+            {
+              "dataStart": "2024-07-11",
+              "dataKoniec": null,
+              "kierunek": "PASYWNY",
+              "opis": "",
+              "typ": "KRS_PROXY"
+            }
+          ]
+        },
+        {
+          "id": 7700121,
+          "nazwy": {
+            "pelna": "ALLEGRO TECH SPÓŁKA Z OGRANICZONĄ ODPOWIEDZIALNOŚCIĄ",
+            "skrocona": "ALLEGRO TECH"
+          },
+          "numery": {
+            "duns": null,
+            "krs": "0000770012",
+            "nip": "5272871200",
+            "regon": "387200100"
+          },
+          "stan": {
+            "czyDofinansowanaPrzezUe": false,
+            "czyJestNaGwp": false,
+            "czyOtrzymalaPomocPubliczna": false,
+            "czyPozytkuPublicznego": false,
+            "czySpolkaSkarbuPanstwa": false,
+            "czyWykreslona": false,
+            "formaPrawna": "SPÓŁKA Z OGRANICZONĄ ODPOWIEDZIALNOŚCIĄ",
+            "pkdPrzewazajaceDzial": "Działalność związana z oprogramowaniem",
+            "wLikwidacji": false,
+            "wUpadlosci": false,
+            "wZawieszeniu": false,
+            "wielkosc": "duza_srednia"
+          },
+          "glownaOsoba": {
+            "id": 1139891,
+            "imionaINazwisko": "Marcin Kuśmierz"
+          },
+          "adres": {
+            "kod": "00-001",
+            "miejscowosc": "Poznań",
+            "nrDomu": "182",
+            "nrMieszkania": "",
+            "panstwo": "Polska",
+            "poczta": "Poznań",
+            "ulica": "Grunwaldzka"
+          },
+          "kontakt": {
+            "emaile": [],
+            "www": ""
+          },
+          "krsRejestry": {
+            "rejestrPrzedsiebiorcowDataWpisu": "2010-01-01",
+            "rejestrPrzedsiebiorcowDataWykreslenia": "",
+            "rejestrStowarzyszenDataWpisu": "",
+            "rejestrStowarzyszenDataWykreslenia": ""
+          },
+          "krsWpisy": {
+            "najnowszyData": "2024-01-01",
+            "najnowszyNumer": 10,
+            "najnowszyPrzedWykresleniemData": "",
+            "najnowszyPrzedWykresleniemNumer": null,
+            "pierwszyData": "2010-01-01",
+            "wykresleniUprawomocnienieData": ""
+          },
+          "krsPowiazaniaLiczby": {
+            "aktualne": 2,
+            "przeszle": 5
+          },
+          "typ": "organizacja",
+          "krsPowiazaniaKwerendowane": [
+            {
+              "dataStart": "2024-07-11",
+              "dataKoniec": null,
+              "kierunek": "PASYWNY",
+              "opis": "",
+              "typ": "KRS_PROXY"
+            }
+          ]
+        },
+        {
+          "id": 6600341,
+          "nazwy": {
+            "pelna": "ALLEGRO ONE SPÓŁKA Z OGRANICZONĄ ODPOWIEDZIALNOŚCIĄ",
+            "skrocona": "ALLEGRO ONE"
+          },
+          "numery": {
+            "duns": null,
+            "krs": "0000660034",
+            "nip": "5272710023",
+            "regon": "382300100"
+          },
+          "stan": {
+            "czyDofinansowanaPrzezUe": false,
+            "czyJestNaGwp": false,
+            "czyOtrzymalaPomocPubliczna": false,
+            "czyPozytkuPublicznego": false,
+            "czySpolkaSkarbuPanstwa": false,
+            "czyWykreslona": false,
+            "formaPrawna": "SPÓŁKA Z OGRANICZONĄ ODPOWIEDZIALNOŚCIĄ",
+            "pkdPrzewazajaceDzial": "Działalność pocztowa i kurierska",
+            "wLikwidacji": false,
+            "wUpadlosci": false,
+            "wZawieszeniu": false,
+            "wielkosc": "duza_srednia"
+          },
+          "glownaOsoba": {
+            "id": 1139891,
+            "imionaINazwisko": "Marcin Kuśmierz"
+          },
+          "adres": {
+            "kod": "00-001",
+            "miejscowosc": "Warszawa",
+            "nrDomu": "17",
+            "nrMieszkania": "",
+            "panstwo": "Polska",
+            "poczta": "Warszawa",
+            "ulica": "Puławska"
+          },
+          "kontakt": {
+            "emaile": [],
+            "www": ""
+          },
+          "krsRejestry": {
+            "rejestrPrzedsiebiorcowDataWpisu": "2010-01-01",
+            "rejestrPrzedsiebiorcowDataWykreslenia": "",
+            "rejestrStowarzyszenDataWpisu": "",
+            "rejestrStowarzyszenDataWykreslenia": ""
+          },
+          "krsWpisy": {
+            "najnowszyData": "2024-01-01",
+            "najnowszyNumer": 10,
+            "najnowszyPrzedWykresleniemData": "",
+            "najnowszyPrzedWykresleniemNumer": null,
+            "pierwszyData": "2010-01-01",
+            "wykresleniUprawomocnienieData": ""
+          },
+          "krsPowiazaniaLiczby": {
+            "aktualne": 2,
+            "przeszle": 4
+          },
+          "typ": "organizacja",
+          "krsPowiazaniaKwerendowane": [
+            {
+              "dataStart": "2024-07-11",
+              "dataKoniec": null,
+              "kierunek": "PASYWNY",
+              "opis": "",
+              "typ": "KRS_PROXY"
+            }
+          ]
+        },
+        {
+          "id": 4423001,
+          "nazwy": {
+            "pelna": "CENEO SPÓŁKA Z OGRANICZONĄ ODPOWIEDZIALNOŚCIĄ",
+            "skrocona": "CENEO"
+          },
+          "numery": {
+            "duns": null,
+            "krs": "0000442300",
+            "nip": "5272310045",
+            "regon": "302100200"
+          },
+          "stan": {
+            "czyDofinansowanaPrzezUe": false,
+            "czyJestNaGwp": false,
+            "czyOtrzymalaPomocPubliczna": false,
+            "czyPozytkuPublicznego": false,
+            "czySpolkaSkarbuPanstwa": false,
+            "czyWykreslona": false,
+            "formaPrawna": "SPÓŁKA Z OGRANICZONĄ ODPOWIEDZIALNOŚCIĄ",
+            "pkdPrzewazajaceDzial": "Działalność portali internetowych",
+            "wLikwidacji": false,
+            "wUpadlosci": false,
+            "wZawieszeniu": false,
+            "wielkosc": "duza_srednia"
+          },
+          "glownaOsoba": {
+            "id": 1139891,
+            "imionaINazwisko": "Marcin Kuśmierz"
+          },
+          "adres": {
+            "kod": "00-001",
+            "miejscowosc": "Poznań",
+            "nrDomu": "182",
+            "nrMieszkania": "",
+            "panstwo": "Polska",
+            "poczta": "Poznań",
+            "ulica": "Grunwaldzka"
+          },
+          "kontakt": {
+            "emaile": [],
+            "www": ""
+          },
+          "krsRejestry": {
+            "rejestrPrzedsiebiorcowDataWpisu": "2010-01-01",
+            "rejestrPrzedsiebiorcowDataWykreslenia": "",
+            "rejestrStowarzyszenDataWpisu": "",
+            "rejestrStowarzyszenDataWykreslenia": ""
+          },
+          "krsWpisy": {
+            "najnowszyData": "2024-01-01",
+            "najnowszyNumer": 10,
+            "najnowszyPrzedWykresleniemData": "",
+            "najnowszyPrzedWykresleniemNumer": null,
+            "pierwszyData": "2010-01-01",
+            "wykresleniUprawomocnienieData": ""
+          },
+          "krsPowiazaniaLiczby": {
+            "aktualne": 2,
+            "przeszle": 8
+          },
+          "typ": "organizacja",
+          "krsPowiazaniaKwerendowane": [
+            {
+              "dataStart": "2024-07-11",
+              "dataKoniec": null,
+              "kierunek": "PASYWNY",
+              "opis": "",
+              "typ": "KRS_PROXY"
+            }
+          ]
+        },
+        {
+          "id": 3312001,
+          "nazwy": {
+            "pelna": "SMART! LOYALTY SPÓŁKA Z OGRANICZONĄ ODPOWIEDZIALNOŚCIĄ",
+            "skrocona": "SMART LOYALTY"
+          },
+          "numery": {
+            "duns": null,
+            "krs": "0000331200",
+            "nip": "5272200045",
+            "regon": "302000100"
+          },
+          "stan": {
+            "czyDofinansowanaPrzezUe": false,
+            "czyJestNaGwp": false,
+            "czyOtrzymalaPomocPubliczna": false,
+            "czyPozytkuPublicznego": false,
+            "czySpolkaSkarbuPanstwa": false,
+            "czyWykreslona": false,
+            "formaPrawna": "SPÓŁKA Z OGRANICZONĄ ODPOWIEDZIALNOŚCIĄ",
+            "pkdPrzewazajaceDzial": "Działalność reklamowa",
+            "wLikwidacji": false,
+            "wUpadlosci": false,
+            "wZawieszeniu": false,
+            "wielkosc": "mala"
+          },
+          "glownaOsoba": {
+            "id": 1139891,
+            "imionaINazwisko": "Marcin Kuśmierz"
+          },
+          "adres": {
+            "kod": "00-001",
+            "miejscowosc": "Warszawa",
+            "nrDomu": "59",
+            "nrMieszkania": "",
+            "panstwo": "Polska",
+            "poczta": "Warszawa",
+            "ulica": "Złota"
+          },
+          "kontakt": {
+            "emaile": [],
+            "www": ""
+          },
+          "krsRejestry": {
+            "rejestrPrzedsiebiorcowDataWpisu": "2010-01-01",
+            "rejestrPrzedsiebiorcowDataWykreslenia": "",
+            "rejestrStowarzyszenDataWpisu": "",
+            "rejestrStowarzyszenDataWykreslenia": ""
+          },
+          "krsWpisy": {
+            "najnowszyData": "2024-01-01",
+            "najnowszyNumer": 10,
+            "najnowszyPrzedWykresleniemData": "",
+            "najnowszyPrzedWykresleniemNumer": null,
+            "pierwszyData": "2010-01-01",
+            "wykresleniUprawomocnienieData": ""
+          },
+          "krsPowiazaniaLiczby": {
+            "aktualne": 2,
+            "przeszle": 1
+          },
+          "typ": "organizacja",
+          "krsPowiazaniaKwerendowane": [
+            {
+              "dataStart": "2024-07-11",
+              "dataKoniec": null,
+              "kierunek": "PASYWNY",
+              "opis": "",
+              "typ": "KRS_PROXY"
+            }
+          ]
+        }
+      ],
+      "powiazaneOsobyZProfilem": [],
+      "powiazaneOsobyBezProfilu": []
+    }
+  }
+}

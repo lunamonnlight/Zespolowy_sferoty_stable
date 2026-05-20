@@ -1,0 +1,470 @@
+﻿{
+  "powiazaniaOrganizacji": {
+    "aktualne": {
+      "powiazaneOrganizacje": [
+        {
+          "id": 26069,
+          "nazwy": {
+            "pelna": "POLSKIE BADANIA INTERNETU SPÓŁKA Z OGRANICZONĄ ODPOWIEDZIALNOŚCIĄ",
+            "skrocona": "POLSKIE BADANIA INTERNETU"
+          },
+          "numery": {
+            "duns": "522040393",
+            "krs": "0000026069",
+            "nip": "5252189123",
+            "regon": "016416840"
+          },
+          "stan": {
+            "czyDofinansowanaPrzezUe": false,
+            "czyJestNaGwp": false,
+            "czyOtrzymalaPomocPubliczna": true,
+            "czyPozytkuPublicznego": false,
+            "czySpolkaSkarbuPanstwa": false,
+            "czyWykreslona": false,
+            "formaPrawna": "SPÓŁKA Z OGRANICZONĄ ODPOWIEDZIALNOŚCIĄ",
+            "pkdPrzewazajaceDzial": "Reklama, badanie rynku i opinii publicznej",
+            "wLikwidacji": false,
+            "wUpadlosci": false,
+            "wZawieszeniu": false,
+            "wielkosc": "duza_srednia"
+          },
+          "glownaOsoba": {
+            "id": 718054,
+            "imionaINazwisko": "Krzysztof Mikulski"
+          },
+          "adres": {
+            "kod": "00-697",
+            "miejscowosc": "Warszawa",
+            "nrDomu": "65/79",
+            "nrMieszkania": "11.31",
+            "panstwo": "Polska",
+            "poczta": "Warszawa",
+            "ulica": "Aleje Jerozolimskie"
+          },
+          "kontakt": {
+            "emaile": [],
+            "www": ""
+          },
+          "krsRejestry": {
+            "rejestrPrzedsiebiorcowDataWpisu": "2001-07-13",
+            "rejestrPrzedsiebiorcowDataWykreslenia": "",
+            "rejestrStowarzyszenDataWpisu": "",
+            "rejestrStowarzyszenDataWykreslenia": ""
+          },
+          "krsWpisy": {
+            "najnowszyData": "2025-05-27",
+            "najnowszyNumer": 67,
+            "najnowszyPrzedWykresleniemData": "",
+            "najnowszyPrzedWykresleniemNumer": null,
+            "pierwszyData": "2001-07-13",
+            "wykresleniUprawomocnienieData": ""
+          },
+          "krsPowiazaniaLiczby": {
+            "aktualne": 6,
+            "przeszle": 48
+          },
+          "typ": "organizacja",
+          "krsPowiazaniaKwerendowane": [
+            {
+              "dataStart": "2023-09-26",
+              "dataKoniec": null,
+              "kierunek": "PASYWNY",
+              "opis": "",
+              "typ": "KRS_SHAREHOLDER"
+            }
+          ]
+        },
+        {
+          "id": 634715,
+          "nazwy": {
+            "pelna": "OPENNET.PL SPÓŁKA Z OGRANICZONĄ ODPOWIEDZIALNOŚCIĄ",
+            "skrocona": "OPENNET.PL"
+          },
+          "numery": {
+            "duns": null,
+            "krs": "0000634715",
+            "nip": "7792446263",
+            "regon": "365270225"
+          },
+          "stan": {
+            "czyDofinansowanaPrzezUe": false,
+            "czyJestNaGwp": false,
+            "czyOtrzymalaPomocPubliczna": false,
+            "czyPozytkuPublicznego": false,
+            "czySpolkaSkarbuPanstwa": false,
+            "czyWykreslona": false,
+            "formaPrawna": "SPÓŁKA Z OGRANICZONĄ ODPOWIEDZIALNOŚCIĄ",
+            "pkdPrzewazajaceDzial": "",
+            "wLikwidacji": false,
+            "wUpadlosci": false,
+            "wZawieszeniu": false,
+            "wielkosc": ""
+          },
+          "glownaOsoba": {
+            "id": 0,
+            "imionaINazwisko": ""
+          },
+          "adres": {
+            "kod": "61-569",
+            "miejscowosc": "Poznań",
+            "nrDomu": "1B",
+            "nrMieszkania": "",
+            "panstwo": "Polska",
+            "poczta": "Poznań",
+            "ulica": "Wierzbięcice"
+          },
+          "kontakt": {
+            "emaile": [],
+            "www": ""
+          },
+          "krsRejestry": {
+            "rejestrPrzedsiebiorcowDataWpisu": "2016-08-31",
+            "rejestrPrzedsiebiorcowDataWykreslenia": "",
+            "rejestrStowarzyszenDataWpisu": "",
+            "rejestrStowarzyszenDataWykreslenia": ""
+          },
+          "krsWpisy": {
+            "najnowszyData": "2026-01-02",
+            "najnowszyNumer": 47,
+            "najnowszyPrzedWykresleniemData": "",
+            "najnowszyPrzedWykresleniemNumer": null,
+            "pierwszyData": "2016-08-31",
+            "wykresleniUprawomocnienieData": ""
+          },
+          "krsPowiazaniaLiczby": {
+            "aktualne": 4,
+            "przeszle": 17
+          },
+          "typ": "organizacja",
+          "krsPowiazaniaKwerendowane": [
+            {
+              "dataStart": "2023-02-17",
+              "dataKoniec": null,
+              "kierunek": "PASYWNY",
+              "opis": "",
+              "typ": "KRS_SHAREHOLDER"
+            }
+          ]
+        },
+        {
+          "id": 90213,
+          "nazwy": {
+            "pelna": "ONE CUSTOMS SPÓŁKA Z OGRANICZONĄ ODPOWIEDZIALNOŚCIĄ",
+            "skrocona": "ONE CUSTOMS"
+          },
+          "numery": {
+            "duns": "366012557",
+            "krs": "0000090213",
+            "nip": "9510058374",
+            "regon": "010979329"
+          },
+          "stan": {
+            "czyDofinansowanaPrzezUe": false,
+            "czyJestNaGwp": false,
+            "czyOtrzymalaPomocPubliczna": true,
+            "czyPozytkuPublicznego": false,
+            "czySpolkaSkarbuPanstwa": false,
+            "czyWykreslona": false,
+            "formaPrawna": "SPÓŁKA Z OGRANICZONĄ ODPOWIEDZIALNOŚCIĄ",
+            "pkdPrzewazajaceDzial": "Magazynowanie i działalność usługowa wspomagająca transport",
+            "wLikwidacji": false,
+            "wUpadlosci": false,
+            "wZawieszeniu": false,
+            "wielkosc": "duza_srednia"
+          },
+          "glownaOsoba": {
+            "id": 0,
+            "imionaINazwisko": ""
+          },
+          "adres": {
+            "kod": "02-274",
+            "miejscowosc": "Warszawa",
+            "nrDomu": "15A",
+            "nrMieszkania": "",
+            "panstwo": "Polska",
+            "poczta": "Warszawa",
+            "ulica": "Mineralna"
+          },
+          "kontakt": {
+            "emaile": [],
+            "www": ""
+          },
+          "krsRejestry": {
+            "rejestrPrzedsiebiorcowDataWpisu": "2002-02-12",
+            "rejestrPrzedsiebiorcowDataWykreslenia": "",
+            "rejestrStowarzyszenDataWpisu": "",
+            "rejestrStowarzyszenDataWykreslenia": ""
+          },
+          "krsWpisy": {
+            "najnowszyData": "2025-11-05",
+            "najnowszyNumer": 50,
+            "najnowszyPrzedWykresleniemData": "",
+            "najnowszyPrzedWykresleniemNumer": null,
+            "pierwszyData": "2002-02-12",
+            "wykresleniUprawomocnienieData": ""
+          },
+          "krsPowiazaniaLiczby": {
+            "aktualne": 3,
+            "przeszle": 14
+          },
+          "typ": "organizacja",
+          "krsPowiazaniaKwerendowane": [
+            {
+              "dataStart": "2022-11-30",
+              "dataKoniec": null,
+              "kierunek": "PASYWNY",
+              "opis": "",
+              "typ": "KRS_SHAREHOLDER"
+            }
+          ]
+        },
+        {
+          "id": 496514,
+          "nazwy": {
+            "pelna": "EBILET POLSKA SPÓŁKA Z OGRANICZONĄ ODPOWIEDZIALNOŚCIĄ",
+            "skrocona": "EBILET POLSKA"
+          },
+          "numery": {
+            "duns": null,
+            "krs": "0000496514",
+            "nip": "9512376701",
+            "regon": "147085850"
+          },
+          "stan": {
+            "czyDofinansowanaPrzezUe": false,
+            "czyJestNaGwp": false,
+            "czyOtrzymalaPomocPubliczna": false,
+            "czyPozytkuPublicznego": false,
+            "czySpolkaSkarbuPanstwa": false,
+            "czyWykreslona": false,
+            "formaPrawna": "SPÓŁKA Z OGRANICZONĄ ODPOWIEDZIALNOŚCIĄ",
+            "pkdPrzewazajaceDzial": "",
+            "wLikwidacji": false,
+            "wUpadlosci": false,
+            "wZawieszeniu": false,
+            "wielkosc": ""
+          },
+          "glownaOsoba": {
+            "id": 475013,
+            "imionaINazwisko": "Bartosz Ryszard Troński"
+          },
+          "adres": {
+            "kod": "00-841",
+            "miejscowosc": "Warszawa",
+            "nrDomu": "51/53",
+            "nrMieszkania": "",
+            "panstwo": "Polska",
+            "poczta": "Warszawa",
+            "ulica": "Żelazna"
+          },
+          "kontakt": {
+            "emaile": [],
+            "www": ""
+          },
+          "krsRejestry": {
+            "rejestrPrzedsiebiorcowDataWpisu": "2014-01-30",
+            "rejestrPrzedsiebiorcowDataWykreslenia": "",
+            "rejestrStowarzyszenDataWpisu": "",
+            "rejestrStowarzyszenDataWykreslenia": ""
+          },
+          "krsWpisy": {
+            "najnowszyData": "2026-01-02",
+            "najnowszyNumer": 59,
+            "najnowszyPrzedWykresleniemData": "",
+            "najnowszyPrzedWykresleniemNumer": null,
+            "pierwszyData": "2014-01-30",
+            "wykresleniUprawomocnienieData": ""
+          },
+          "krsPowiazaniaLiczby": {
+            "aktualne": 6,
+            "przeszle": 10
+          },
+          "typ": "organizacja",
+          "krsPowiazaniaKwerendowane": [
+            {
+              "dataStart": "2022-07-18",
+              "dataKoniec": null,
+              "kierunek": "PASYWNY",
+              "opis": "",
+              "typ": "KRS_SHAREHOLDER"
+            }
+          ]
+        }
+      ],
+      "powiazaneOsobyZProfilem": [
+        {
+          "id": 1139891,
+          "tozsamosc": {
+            "dataUrodzenia": "1976-03-07",
+            "drugieImiona": "Paweł",
+            "imie": "Marcin",
+            "nazwisko": "Kuśmierz",
+            "plec": "M"
+          },
+          "krsPowiazaniaLiczby": {
+            "aktualne": 8,
+            "aktualneOrganizacje": 8,
+            "przeszle": 29
+          },
+          "typ": "osoba",
+          "krsPowiazaniaKwerendowane": [
+            {
+              "dataStart": "2025-05-15",
+              "dataKoniec": null,
+              "kierunek": "AKTYWNY",
+              "opis": "PREZES ZARZĄDU",
+              "typ": "KRS_BOARD"
+            }
+          ]
+        },
+        {
+          "id": 399571,
+          "tozsamosc": {
+            "dataUrodzenia": "1979-02-27",
+            "drugieImiona": "",
+            "imie": "Grzegorz",
+            "nazwisko": "Czapski",
+            "plec": "M"
+          },
+          "krsPowiazaniaLiczby": {
+            "aktualne": 8,
+            "aktualneOrganizacje": 7,
+            "przeszle": 12
+          },
+          "typ": "osoba",
+          "krsPowiazaniaKwerendowane": [
+            {
+              "dataStart": "2024-07-11",
+              "dataKoniec": null,
+              "kierunek": "AKTYWNY",
+              "opis": "",
+              "typ": "KRS_PROXY"
+            }
+          ]
+        },
+        {
+          "id": 1336916,
+          "tozsamosc": {
+            "dataUrodzenia": "1963-11-30",
+            "drugieImiona": "Anthony",
+            "imie": "Tom",
+            "nazwisko": "Ruhan",
+            "plec": "M"
+          },
+          "krsPowiazaniaLiczby": {
+            "aktualne": 11,
+            "aktualneOrganizacje": 8,
+            "przeszle": 69
+          },
+          "typ": "osoba",
+          "krsPowiazaniaKwerendowane": [
+            {
+              "dataStart": "2024-05-10",
+              "dataKoniec": null,
+              "kierunek": "AKTYWNY",
+              "opis": "CZŁONEK ZARZĄDU",
+              "typ": "KRS_BOARD"
+            }
+          ]
+        },
+        {
+          "id": 1489878,
+          "tozsamosc": {
+            "dataUrodzenia": "1967-01-11",
+            "drugieImiona": "Louis Peter",
+            "imie": "Jonathan",
+            "nazwisko": "Eastick",
+            "plec": "M"
+          },
+          "krsPowiazaniaLiczby": {
+            "aktualne": 5,
+            "aktualneOrganizacje": 5,
+            "przeszle": 6
+          },
+          "typ": "osoba",
+          "krsPowiazaniaKwerendowane": [
+            {
+              "dataStart": "2018-05-09",
+              "dataKoniec": null,
+              "kierunek": "AKTYWNY",
+              "opis": "CZŁONEK ZARZĄDU",
+              "typ": "KRS_BOARD"
+            }
+          ]
+        },
+        {
+          "id": 108153,
+          "tozsamosc": {
+            "dataUrodzenia": "1975-11-20",
+            "drugieImiona": "Bartłomiej",
+            "imie": "Łukasz",
+            "nazwisko": "Grzelak",
+            "plec": "M"
+          },
+          "krsPowiazaniaLiczby": {
+            "aktualne": 1,
+            "aktualneOrganizacje": 1,
+            "przeszle": 1
+          },
+          "typ": "osoba",
+          "krsPowiazaniaKwerendowane": [
+            {
+              "dataStart": "2018-03-21",
+              "dataKoniec": null,
+              "kierunek": "AKTYWNY",
+              "opis": "",
+              "typ": "KRS_PROXY"
+            }
+          ]
+        },
+        {
+          "id": 447271,
+          "tozsamosc": {
+            "dataUrodzenia": "1984-12-16",
+            "drugieImiona": "Joanna",
+            "imie": "Monika",
+            "nazwisko": "Drews",
+            "plec": "F"
+          },
+          "krsPowiazaniaLiczby": {
+            "aktualne": 2,
+            "aktualneOrganizacje": 2,
+            "przeszle": 2
+          },
+          "typ": "osoba",
+          "krsPowiazaniaKwerendowane": [
+            {
+              "dataStart": "2018-03-21",
+              "dataKoniec": null,
+              "kierunek": "AKTYWNY",
+              "opis": "",
+              "typ": "KRS_PROXY"
+            }
+          ]
+        }
+      ],
+      "powiazaneOsobyBezProfilu": [
+        {
+          "id": 3286724,
+          "tozsamosc": {
+            "dataUrodzenia": "",
+            "drugieImiona": "",
+            "imie": "Matthias",
+            "nazwisko": "Frechen",
+            "plec": ""
+          },
+          "typ": "osoba-bez-pesel",
+          "krsPowiazaniaKwerendowane": [
+            {
+              "dataStart": "2023-09-28",
+              "dataKoniec": null,
+              "kierunek": "AKTYWNY",
+              "opis": "",
+              "typ": "KRS_PROXY"
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

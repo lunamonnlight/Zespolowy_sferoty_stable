@@ -1,0 +1,88 @@
+﻿{
+  "lista": [
+    {
+      "id": "org-26069",
+      "nazwa": "POLSKIE BADANIA INTERNETU",
+      "typ": "organizacja",
+      "krs": "0000026069",
+      "nip": "5252189123"
+    },
+    {
+      "id": "org-90213",
+      "nazwa": "ONE CUSTOMS",
+      "typ": "organizacja",
+      "krs": "0000090213",
+      "nip": "9510058374"
+    },
+    {
+      "id": "org-496514",
+      "nazwa": "EBILET POLSKA",
+      "typ": "organizacja",
+      "krs": "0000496514",
+      "nip": "9512376701"
+    },
+    {
+      "id": "org-634715",
+      "nazwa": "OPENNET.PL",
+      "typ": "organizacja",
+      "krs": "0000634715",
+      "nip": "7792446263"
+    },
+    {
+      "id": "org-635012",
+      "nazwa": "ALLEGRO",
+      "typ": "organizacja",
+      "krs": "635012",
+      "nip": "5252674798"
+    },
+    {
+      "id": "person-108153",
+      "nazwa": "Łukasz Grzelak",
+      "typ": "osoba",
+      "krs": null,
+      "nip": null
+    },
+    {
+      "id": "person-399571",
+      "nazwa": "Grzegorz Czapski",
+      "typ": "osoba",
+      "krs": null,
+      "nip": null
+    },
+    {
+      "id": "person-447271",
+      "nazwa": "Monika Drews",
+      "typ": "osoba",
+      "krs": null,
+      "nip": null
+    },
+    {
+      "id": "person-1139891",
+      "nazwa": "Marcin Kuśmierz",
+      "typ": "osoba",
+      "krs": null,
+      "nip": null
+    },
+    {
+      "id": "person-1336916",
+      "nazwa": "Tom Ruhan",
+      "typ": "osoba",
+      "krs": null,
+      "nip": null
+    },
+    {
+      "id": "person-1489878",
+      "nazwa": "Jonathan Eastick",
+      "typ": "osoba",
+      "krs": null,
+      "nip": null
+    },
+    {
+      "id": "person-3286724",
+      "nazwa": "Matthias Frechen",
+      "typ": "osoba-bez-pesel",
+      "krs": null,
+      "nip": null
+    }
+  ]
+}

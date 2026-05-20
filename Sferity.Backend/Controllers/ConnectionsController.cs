@@ -18,11 +18,7 @@ public class BusinessConnectionsController : ControllerBase
         _connectionsService = connectionsService;
         _logger = logger;
     }
-
-    /// <summary>
-    /// Zwraca pełny graf centrum (brak entityId) lub ego-graf konkretnej encji.
-    /// Wywoływany przy wyszukaniu podmiotu z paska – zawsze zwraca pełny graf Allegro.
-    /// </summary>
+    
     [HttpGet("graph")]
     public async Task<ActionResult<GraphDto>> GetGraph([FromQuery] string? entityId = null)
     {
@@ -39,12 +35,7 @@ public class BusinessConnectionsController : ControllerBase
     }
 
     /// <summary>
-    /// Rozwinięcie węzła – zwraca TYLKO nowe węzły i krawędzie (różnicę).
-    /// Frontend przesyła listę id węzłów które już wyświetla (knownIds),
-    /// backend odfiltrowuje je i zwraca tylko nowości.
-    ///
-    /// POST /api/businessconnections/expand/{nodeId}
-    /// Body: ["org-centrum","person-1139891","org-26069", ...]
+    /// Rozwinięcie węzła – zwraca tylko nowe węzły i krawędzie (te których nie ma w knownNodeIds).
     /// </summary>
     [HttpPost("expand/{nodeId}")]
     public async Task<ActionResult<GraphDto>> ExpandNode(
@@ -77,7 +68,7 @@ public class BusinessConnectionsController : ControllerBase
     }
 
     /// <summary>
-    /// Szczegóły konkretnej encji z listą powiązań.
+    /// Szczegóły konkretnej encji.
     /// </summary>
     [HttpGet("entity/{id}")]
     public async Task<ActionResult<EntityDetailDto>> GetEntity(string id)

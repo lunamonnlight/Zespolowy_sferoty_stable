@@ -1,8 +1,7 @@
+using Sferity.Backend.Services;
+
 QuestPDF.Settings.License = QuestPDF.Infrastructure.LicenseType.Community;
 var builder = WebApplication.CreateBuilder(args);
-
-// Rejestrujemy tylko kontrolery
-builder.Services.AddControllers();
 
 // Rejestrujemy CORS, żeby Vue mogło pobrać dane
 builder.Services.AddCors(options => {
@@ -10,6 +9,15 @@ builder.Services.AddCors(options => {
 });
 // Rejestracja serwisu AI dla kontrolerów
 builder.Services.AddHttpClient<Sferity.Backend.Servises.RaportAI>();
+
+builder.Services
+    .AddControllers()
+    .AddJsonOptions(options =>
+    {
+        options.JsonSerializerOptions.PropertyNamingPolicy =
+            System.Text.Json.JsonNamingPolicy.CamelCase;
+    });
+builder.Services.AddScoped<IConnectionsService, ConnectionsService>(); 
 
 var app = builder.Build();
 
