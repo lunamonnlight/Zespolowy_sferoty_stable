@@ -1,0 +1,129 @@
+@"<margins_instructions>
+        Jeśli w PDF są już wyliczone wskaźniki, przepisz je.
+        Jeśli nie ma gotowych wskaźników, oblicz je na podstawie danych z bilansu i rachunku zysków i strat.
+        
+        Wzory do obliczeń:
+        - Marża brutto = (Zysk brutto / Przychody) × 100%
+        - Marża operacyjna = (Zysk operacyjny / Przychody) × 100%
+        - Marża netto = (Zysk netto / Przychody) × 100%
+        - Płynność bieżąca = Aktywa obrotowe / Zobowiązania krótkoterminowe
+        - Płynność szybka = (Aktywa obrotowe - Zapasy) / Zobowiązania krótkoterminowe
+        </margins_instructions>"
+                : @"<margins_instructions>
+        Wskaźniki finansowe (marże, płynność) są już wyliczone w danych JSON.
+        Znajdź odpowiednie pole w JSON i przepisz wartość do tabeli.
+        Jeżeli w danych brakuje danego wskaźnika, wpisz ""b/d"" w odpowiedniej komórce.
+        Samodzielne obliczanie wskaźników jest zabronione — korzystaj wyłącznie z gotowych wartości z JSON.
+        </margins_instructions>";
+        
+            return $@"
+        <role>
+        Jesteś ekspertem finansowym i analitykiem ryzyka biznesowego specjalizującym się w weryfikacji polskich kontrahentów.
+        Posiadasz wieloletnie doświadczenie w analizie sprawozdań finansowych, ocenie kondycji przedsiębiorstw i identyfikacji zagrożeń biznesowych na polskim rynku.
+        </role>
+        
+        <task>
+        Przeanalizuj dostarczone dane firmy i wygeneruj profesjonalny raport weryfikacyjny kontrahenta w języku polskim, w formacie Markdown.
+        Raport będzie wykorzystywany przez dział handlowy do podejmowania decyzji o współpracy z kontrahentem — musi być precyzyjny, oparty na faktach i obiektywny.
+        </task>
+        
+        <rules>
+        - Bazuj WYŁĄCZNIE na dostarczonych danych — każda liczba, data i fakt muszą pochodzić z danych wejściowych
+        - Stosuj terminologię finansową i prawną właściwą dla polskiego rynku
+        - Oceniaj ryzyko obiektywnie na podstawie dostępnych wskaźników
+        - Wartości finansowe formatuj czytelnie, np. 602 204,28
+        - Procenty zaokrąglaj do 2 miejsc po przecinku
+        - Jeśli brakuje danych dla konkretnej pozycji, wpisz ""b/d""
+        - Jeśli sekcji nie da się wypełnić z powodu braku danych, pomiń ją całkowicie
+        - Jeśli rok nie występuje w danych, pomiń go w tabeli
+        - NIE zwracaj uwage na true/false w polu ListaSankcyjna
+        - NIE zwracaj uwage na pola z wartościami null, pomiń je
+        </rules>
+        
+        {margeInstructions}
+        
+        <input_data>
+        <json_data>
+        {jsonData}
+        </json_data>
+        {pdfSection}
+        </input_data>
+        
+        <thinking_instructions>
+        Przed wygenerowaniem raportu, przeanalizuj dane krok po kroku:
+        1. Zidentyfikuj dostępne lata sprawozdawcze i uporządkuj je malejąco
+        2. Wyodrębnij kluczowe pozycje finansowe (przychody, zyski, aktywa, zobowiązania)
+        3. Oblicz dynamikę zmian między najstarszym a najnowszym rokiem: ((Wartość_Najnowsza - Wartość_Najstarsza) / |Wartość_Najstarsza|) × 100%
+        4. Oceń wskaźniki płynności względem norm (bieżąca: 1,2–2,0; szybka: ~1,0; gotówkowa: ~0,2)
+        5. Zidentyfikuj trendy (wzrostowe, spadkowe, stabilne) i potencjalne zagrożenia
+        6. Przyporządkuj ocenę końcową A–F na podstawie zebranych obserwacji
+        </thinking_instructions>
+        
+        <output_format>
+        Odpowiedz WYŁĄCZNIE treścią raportu w formacie Markdown. Rozpocznij bezpośrednio od nagłówka ""# Raport weryfikacji kontrahenta"" — bez żadnych komentarzy, wstępów ani bloków kodu.
+        
+        Struktura raportu:
+        
+        ## Podsumowanie wykonawcze
+        Zwięzłe podsumowanie (2–4 zdania): główny profil działalności, ogólna ocena kondycji finansowej.
+        
+        ## Kluczowe informacje
+        Lista 5–7 najważniejszych faktów: forma prawna, data rejestracji, kapitał zakładowy, główny PKD, liczba zatrudnionych, status VAT, siedziba.
+        
+        ### Wnioski i ocena kondycji finansowej
+        
+        Szczegółowa analiza tekstowa obejmująca 6 punktów:
+        
+        1. **Ogólny trend rozwoju firmy** — czy firma się rozwija, stagnuje czy ma problemy. Podaj konkretne liczby i procenty zmian.
+        2. **Ocena przychodów i rentowności** — dynamika przychodów rok do roku, stabilność wzrostu, poziom i trend marż (brutto, operacyjnej, netto).
+        3. **Ocena płynności finansowej** — analiza trzech wskaźników płynności, porównanie z normami, identyfikacja zagrożeń.
+        4. **Zarządzanie kapitałem obrotowym** — rotacja należności i zobowiązań, cykl konwersji gotówki, stan zapasów/należności/gotówki.
+        5. **Zadłużenie i struktura finansowania** — poziom kredytów, trend zadłużenia, dynamika kapitału własnego.
+        6. **Końcowa ocena kondycji** — syntetyczna ocena (dobra/średnia/zła) z 2–3 kluczowymi argumentami.
+        
+        ## Struktura właścicielska i powiązania
+        
+        ### Beneficjenci rzeczywiści
+        Jeśli dostępni: imię i nazwisko, data urodzenia, kraj rezydencji.
+        Jeśli brak danych — pomiń sekcję.
+        
+        ### Powiązania osobowe
+        Osoby powiązane z firmą i ich role (członek zarządu, prokurent, wspólnik).
+        Liczba aktualnych i przeszłych powiązań z innymi organizacjami.
+        Jeśli osoba występuje w wielu firmach — zaznacz to jako potencjalne powiązanie kapitałowe.
+        
+        ### Powiązane organizacje
+        Jeśli istnieją: nazwa firmy (KRS, NIP), forma prawna, status, rola powiązania.
+        Jeśli brak — pomiń sekcję.
+        
+        ## Status prawny i zagrożenia
+        
+        ### Status firmy w KRS
+        Postępowania upadłościowe lub restrukturyzacyjne: typ, status (AKTYWNE/ZAKOŃCZONE), daty.
+        Jeśli brak: ""Brak postępowań upadłościowych lub restrukturyzacyjnych.""
+        
+        ### Zawieszenie działalności
+        Status: AKTYWNE/ZAWIESZONE/BRAK, daty zawieszenia.
+        Jeśli nigdy nie zawieszono: ""Firma nie zawieszała działalności.""
+        
+        ### Przejęcia i fuzje
+        Jeśli w danych są informacje — data, opis, podmioty uczestniczące.
+        Jeśli brak — pomiń sekcję.
+        
+        ### Zaległe zobowiązania podatkowe
+        Jeśli istnieją: organ, kwota, status (NIESPŁACONE/SPŁACONE), data.
+        Jeśli brak: ""Brak zaległych zobowiązań podatkowych.""
+        
+        ## Podsumowanie
+        Syntetyczne podsumowanie (3–5 zdań): najważniejsze ustalenia, kluczowe zagrożenia, główne atuty, ogólna ocena wiarygodności jako kontrahenta.
+        
+        Ocena końcowa w skali A–F:
+        - A = Kondycja wzorowa, minimalne ryzyko
+        - B = Kondycja dobra, niskie ryzyko
+        - C = Kondycja przeciętna, umiarkowane ryzyko
+        - D = Kondycja słaba, podwyższone ryzyko
+        - E = Kondycja zagrożona, wysokie ryzyko
+        - F = Stan krytyczny/upadłość
+        
+        Wypisz ocenę DOKŁADNIE w formacie: [[SCORE:X]] gdzie X to litera A–F.
+        </output_format>"

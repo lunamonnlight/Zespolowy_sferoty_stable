@@ -1,0 +1,524 @@
+{
+  "Users": [
+    {
+      "Id": 1,
+      "Username": "Wisnia",
+      "IsBlocked": false,
+      "Role": "admin",
+      "CreatedAt": "2026-04-16T11:44:18.5489079+02:00"
+    },
+    {
+      "Id": 2,
+      "Username": "M1myk",
+      "IsBlocked": false,
+      "Role": "user",
+      "CreatedAt": "2026-04-16T11:44:18.5489281+02:00"
+    },
+    {
+      "Id": 3,
+      "Username": "Testowy_User",
+      "IsBlocked": false,
+      "Role": "user",
+      "CreatedAt": "2026-04-16T11:44:18.5489303+02:00"
+    }
+  ],
+  "Funds": [
+    {
+      "Id": 1,
+      "UserId": 0,
+      "Name": "dadd",
+      "Amount": 14930.00,
+      "Currency": "PLN"
+    },
+    {
+      "Id": 2,
+      "UserId": 0,
+      "Name": "Kapita\u0142 Zak\u0142adowy",
+      "Amount": 50000,
+      "Currency": "PLN"
+    },
+    {
+      "Id": 3,
+      "UserId": 0,
+      "Name": "DDDD",
+      "Amount": 5000,
+      "Currency": "PLN"
+    },
+    {
+      "Id": 4,
+      "UserId": 1,
+      "Name": "10",
+      "Amount": 300,
+      "Currency": "PLN"
+    },
+    {
+      "Id": 5,
+      "UserId": 1,
+      "Name": "XD",
+      "Amount": 111111,
+      "Currency": "PLN"
+    },
+    {
+      "Id": 6,
+      "UserId": 3,
+      "Name": "mam dostep",
+      "Amount": 2137,
+      "Currency": "PLN"
+    },
+    {
+      "Id": 7,
+      "UserId": 2,
+      "Name": "Portfel g\u0142\u00F3wny",
+      "Amount": 190.00,
+      "Currency": "PLN"
+    }
+  ],
+  "Logs": [
+    {
+      "Timestamp": "2026-05-20T14:45:35.2987146+02:00",
+      "Action": "U\u017Cytkownik ID:1 do\u0142adowa\u0142 100 PLN kodem fdb9be7f-8d4d-4591-9cf4-8368684db0c5",
+      "User": "System"
+    },
+    {
+      "Timestamp": "2026-05-20T14:45:27.2941943+02:00",
+      "Action": "Wygenerowano kody (1 szt.) o warto\u015Bci 100 PLN",
+      "User": "System"
+    },
+    {
+      "Timestamp": "2026-05-20T12:44:33.2742239+02:00",
+      "Action": "U\u017Cytkownik ID:3 do\u0142adowa\u0142 100 PLN kodem 5225b0b1-3e57-494d-998a-0461ae95a045",
+      "User": "System"
+    },
+    {
+      "Timestamp": "2026-05-20T12:44:20.9424912+02:00",
+      "Action": "Wygenerowano kody (1 szt.) o warto\u015Bci 100 PLN",
+      "User": "System"
+    },
+    {
+      "Timestamp": "2026-05-20T12:44:03.8119322+02:00",
+      "Action": "U\u017Cytkownik ID:2 do\u0142adowa\u0142 100 PLN kodem 8a89e065-40b9-4e5d-84b5-2e713af42773",
+      "User": "System"
+    },
+    {
+      "Timestamp": "2026-05-20T12:43:55.0091467+02:00",
+      "Action": "Wygenerowano kody (1 szt.) o warto\u015Bci 100 PLN",
+      "User": "System"
+    },
+    {
+      "Timestamp": "2026-05-20T12:42:58.5793069+02:00",
+      "Action": "Zmieniono status blokady u\u017Cytkownika M1myk na False",
+      "User": "System"
+    },
+    {
+      "Timestamp": "2026-05-20T12:42:57.7564303+02:00",
+      "Action": "Zmieniono status blokady u\u017Cytkownika M1myk na True",
+      "User": "System"
+    },
+    {
+      "Timestamp": "2026-05-10T15:05:28.4901803+02:00",
+      "Action": "Zmieniono status blokady u\u017Cytkownika Testowy_User na True",
+      "User": "System"
+    },
+    {
+      "Timestamp": "2026-05-10T15:04:58.9630747+02:00",
+      "Action": "Zmieniono status blokady u\u017Cytkownika M1myk na True",
+      "User": "System"
+    },
+    {
+      "Timestamp": "2026-05-10T15:04:51.9799585+02:00",
+      "Action": "Zmieniono status blokady u\u017Cytkownika M1myk na False",
+      "User": "System"
+    },
+    {
+      "Timestamp": "2026-05-10T15:04:47.885054+02:00",
+      "Action": "Zwi\u0119kszono saldo u\u017Cytkownika M1myk o 100 PLN. Obecny stan: 100 PLN",
+      "User": "System"
+    },
+    {
+      "Timestamp": "2026-05-10T14:43:56.6381615+02:00",
+      "Action": "Zwi\u0119kszono saldo u\u017Cytkownika Wisnia o 200 PLN. Obecny stan: 200 PLN",
+      "User": "System"
+    },
+    {
+      "Timestamp": "2026-05-10T14:11:23.5604511+02:00",
+      "Action": "Zmieniono status blokady u\u017Cytkownika M1myk na True",
+      "User": "System"
+    },
+    {
+      "Timestamp": "2026-05-10T14:11:22.717499+02:00",
+      "Action": "Zmieniono status blokady u\u017Cytkownika M1myk na False",
+      "User": "System"
+    },
+    {
+      "Timestamp": "2026-05-04T20:01:26.6289212+02:00",
+      "Action": "Zmieniono status blokady u\u017Cytkownika M1myk na True",
+      "User": "System"
+    },
+    {
+      "Timestamp": "2026-05-04T20:01:15.3829577+02:00",
+      "Action": "Zmieniono status blokady u\u017Cytkownika M1myk na False",
+      "User": "System"
+    },
+    {
+      "Timestamp": "2026-05-04T20:00:39.645523+02:00",
+      "Action": "Zmieniono status blokady u\u017Cytkownika M1myk na True",
+      "User": "System"
+    },
+    {
+      "Timestamp": "2026-05-04T20:00:24.1529355+02:00",
+      "Action": "Zmieniono status blokady u\u017Cytkownika M1myk na False",
+      "User": "System"
+    },
+    {
+      "Timestamp": "2026-05-04T20:00:23.7375654+02:00",
+      "Action": "Zmieniono status blokady u\u017Cytkownika Testowy_User na False",
+      "User": "System"
+    },
+    {
+      "Timestamp": "2026-05-04T20:00:21.4355231+02:00",
+      "Action": "Zmieniono status blokady u\u017Cytkownika Testowy_User na True",
+      "User": "System"
+    },
+    {
+      "Timestamp": "2026-05-04T19:54:21.0391764+02:00",
+      "Action": "Dodano fundusz: mam dostep (2137 PLN) dla u\u017Cytkownika Testowy_User",
+      "User": "System"
+    },
+    {
+      "Timestamp": "2026-05-04T19:51:15.8873786+02:00",
+      "Action": "Zmieniono status blokady u\u017Cytkownika Testowy_User na False",
+      "User": "System"
+    },
+    {
+      "Timestamp": "2026-05-04T19:51:14.9821139+02:00",
+      "Action": "Zmieniono status blokady u\u017Cytkownika Testowy_User na True",
+      "User": "System"
+    },
+    {
+      "Timestamp": "2026-05-04T19:51:00.0846054+02:00",
+      "Action": "Zmieniono status blokady u\u017Cytkownika M1myk na True",
+      "User": "System"
+    },
+    {
+      "Timestamp": "2026-05-04T19:50:12.0392108+02:00",
+      "Action": "Zmieniono status blokady u\u017Cytkownika M1myk na False",
+      "User": "System"
+    },
+    {
+      "Timestamp": "2026-05-04T18:57:11.3757234+02:00",
+      "Action": "Dodano fundusz: XD (111111 PLN) dla u\u017Cytkownika Wisnia",
+      "User": "System"
+    },
+    {
+      "Timestamp": "2026-05-04T18:56:57.1132629+02:00",
+      "Action": "Dodano fundusz: 10 (0 PLN) dla u\u017Cytkownika Wisnia",
+      "User": "System"
+    },
+    {
+      "Timestamp": "2026-05-04T18:31:51.3967674+02:00",
+      "Action": "Zmieniono status blokady u\u017Cytkownika M1myk na True",
+      "User": "System"
+    },
+    {
+      "Timestamp": "2026-05-04T18:31:49.8660124+02:00",
+      "Action": "Zmieniono status blokady u\u017Cytkownika M1myk na False",
+      "User": "System"
+    },
+    {
+      "Timestamp": "2026-04-23T09:20:02.5303716+02:00",
+      "Action": "Zmieniono status blokady u\u017Cytkownika M1myk na True",
+      "User": "System"
+    },
+    {
+      "Timestamp": "2026-04-23T09:20:01.8091171+02:00",
+      "Action": "Zmieniono status blokady u\u017Cytkownika M1myk na False",
+      "User": "System"
+    },
+    {
+      "Timestamp": "2026-04-23T09:19:56.2907684+02:00",
+      "Action": "Dodano fundusz: DDDD",
+      "User": "System"
+    },
+    {
+      "Timestamp": "2026-04-23T09:06:07.3046173+02:00",
+      "Action": "Zmieniono status blokady u\u017Cytkownika M1myk na True",
+      "User": "System"
+    },
+    {
+      "Timestamp": "2026-04-23T09:06:05.5773577+02:00",
+      "Action": "Zmieniono status blokady u\u017Cytkownika M1myk na False",
+      "User": "System"
+    },
+    {
+      "Timestamp": "2026-04-16T11:44:19.4633674+02:00",
+      "Action": "Zmieniono status blokady u\u017Cytkownika M1myk na True",
+      "User": "System"
+    },
+    {
+      "Timestamp": "2026-04-16T11:44:18.5491298+02:00",
+      "Action": "Zmieniono status blokady u\u017Cytkownika M1myk na False",
+      "User": "System"
+    },
+    {
+      "Timestamp": "2026-04-16T11:45:00Z",
+      "Action": "Inicjalizacja systemu administracyjnego",
+      "User": "System"
+    },
+    {
+      "Timestamp": "2026-04-16T11:42:10Z",
+      "Action": "Zablokowano konto u\u017Cytkownika M1myk",
+      "User": "Admin"
+    },
+    {
+      "Timestamp": "2026-04-16T11:39:39Z",
+      "Action": "Dodano fundusz: dadd",
+      "User": "System"
+    }
+  ],
+  "SearchLogs": [
+    {
+      "Id": 11,
+      "UserId": 0,
+      "Username": "",
+      "SearchedNip": "7392854679",
+      "SearchedKrs": "53744",
+      "SearchTimestamp": "2026-05-20T13:32:03.0554742Z",
+      "IsSuccess": true,
+      "ErrorMessage": null,
+      "Cost": 10.00,
+      "IsRequest": false,
+      "Gus": false,
+      "Vat": false,
+      "Financial": false,
+      "Status": false,
+      "Connections": false,
+      "Beneficiaries": false,
+      "ReportAI": true,
+      "Patents": false,
+      "OdpisKrs": false
+    },
+    {
+      "Id": 10,
+      "UserId": 0,
+      "Username": "",
+      "SearchedNip": "7392854679",
+      "SearchedKrs": "53744",
+      "SearchTimestamp": "2026-05-20T13:13:58.2867178Z",
+      "IsSuccess": true,
+      "ErrorMessage": null,
+      "Cost": 10.00,
+      "IsRequest": false,
+      "Gus": false,
+      "Vat": false,
+      "Financial": false,
+      "Status": false,
+      "Connections": false,
+      "Beneficiaries": false,
+      "ReportAI": true,
+      "Patents": false,
+      "OdpisKrs": false
+    },
+    {
+      "Id": 9,
+      "UserId": 0,
+      "Username": "",
+      "SearchedNip": "7392854679",
+      "SearchedKrs": "53744",
+      "SearchTimestamp": "2026-05-20T13:11:48.2449196Z",
+      "IsSuccess": true,
+      "ErrorMessage": null,
+      "Cost": 10.00,
+      "IsRequest": false,
+      "Gus": false,
+      "Vat": false,
+      "Financial": false,
+      "Status": false,
+      "Connections": false,
+      "Beneficiaries": false,
+      "ReportAI": true,
+      "Patents": false,
+      "OdpisKrs": false
+    },
+    {
+      "Id": 8,
+      "UserId": 0,
+      "Username": "",
+      "SearchedNip": "7392854679",
+      "SearchedKrs": "53744",
+      "SearchTimestamp": "2026-05-20T13:11:15.3809473Z",
+      "IsSuccess": true,
+      "ErrorMessage": null,
+      "Cost": 10.00,
+      "IsRequest": false,
+      "Gus": false,
+      "Vat": false,
+      "Financial": false,
+      "Status": false,
+      "Connections": false,
+      "Beneficiaries": false,
+      "ReportAI": true,
+      "Patents": false,
+      "OdpisKrs": false
+    },
+    {
+      "Id": 7,
+      "UserId": 0,
+      "Username": "",
+      "SearchedNip": "7392854679",
+      "SearchedKrs": "53744",
+      "SearchTimestamp": "2026-05-20T13:02:47.9916928Z",
+      "IsSuccess": true,
+      "ErrorMessage": null,
+      "Cost": 10.00,
+      "IsRequest": false,
+      "Gus": false,
+      "Vat": false,
+      "Financial": false,
+      "Status": false,
+      "Connections": false,
+      "Beneficiaries": false,
+      "ReportAI": true,
+      "Patents": false,
+      "OdpisKrs": false
+    },
+    {
+      "Id": 6,
+      "UserId": 0,
+      "Username": "",
+      "SearchedNip": "7392854679",
+      "SearchedKrs": "53744",
+      "SearchTimestamp": "2026-05-20T13:02:34.772475Z",
+      "IsSuccess": true,
+      "ErrorMessage": null,
+      "Cost": 10.00,
+      "IsRequest": false,
+      "Gus": false,
+      "Vat": false,
+      "Financial": false,
+      "Status": false,
+      "Connections": false,
+      "Beneficiaries": false,
+      "ReportAI": true,
+      "Patents": false,
+      "OdpisKrs": false
+    },
+    {
+      "Id": 5,
+      "UserId": 0,
+      "Username": "",
+      "SearchedNip": "7392854679",
+      "SearchedKrs": "53744",
+      "SearchTimestamp": "2026-05-20T13:00:35.1226379Z",
+      "IsSuccess": true,
+      "ErrorMessage": null,
+      "Cost": 10.00,
+      "IsRequest": false,
+      "Gus": false,
+      "Vat": false,
+      "Financial": false,
+      "Status": false,
+      "Connections": false,
+      "Beneficiaries": false,
+      "ReportAI": true,
+      "Patents": false,
+      "OdpisKrs": false
+    },
+    {
+      "Id": 1,
+      "UserId": 1,
+      "Username": "Wisnia",
+      "SearchedNip": "5260001234",
+      "SearchedKrs": null,
+      "SearchTimestamp": "2026-05-11T10:15:00.123Z",
+      "IsSuccess": true,
+      "ErrorMessage": null,
+      "Cost": 15.50,
+      "IsRequest": false,
+      "Gus": true,
+      "Vat": true,
+      "Financial": true,
+      "Status": true,
+      "Connections": true,
+      "Beneficiaries": false,
+      "ReportAI": true,
+      "Patents": false,
+      "OdpisKrs": false
+    },
+    {
+      "Id": 2,
+      "UserId": 3,
+      "Username": "Testowy_User",
+      "SearchedNip": null,
+      "SearchedKrs": "0000012345",
+      "SearchTimestamp": "2026-05-11T11:20:30.456Z",
+      "IsSuccess": true,
+      "ErrorMessage": null,
+      "Cost": 2.00,
+      "IsRequest": false,
+      "Gus": true,
+      "Vat": false,
+      "Financial": false,
+      "Status": true,
+      "Connections": false,
+      "Beneficiaries": false,
+      "ReportAI": false,
+      "Patents": false,
+      "OdpisKrs": true
+    },
+    {
+      "Id": 3,
+      "UserId": 3,
+      "Username": "Testowy_User",
+      "SearchedNip": "9998887766",
+      "SearchedKrs": null,
+      "SearchTimestamp": "2026-05-11T12:05:10Z",
+      "IsSuccess": false,
+      "ErrorMessage": "Nie znaleziono podmiotu o podanym numerze NIP w bazie GUS.",
+      "Cost": 0.00,
+      "IsRequest": false,
+      "Gus": true,
+      "Vat": true,
+      "Financial": false,
+      "Status": false,
+      "Connections": false,
+      "Beneficiaries": false,
+      "ReportAI": false,
+      "Patents": false,
+      "OdpisKrs": false
+    },
+    {
+      "Id": 4,
+      "UserId": 2,
+      "Username": "M1myk",
+      "SearchedNip": "1112223344",
+      "SearchedKrs": null,
+      "SearchTimestamp": "2026-05-10T09:00:00Z",
+      "IsSuccess": true,
+      "ErrorMessage": null,
+      "Cost": 5.00,
+      "IsRequest": false,
+      "Gus": true,
+      "Vat": true,
+      "Financial": false,
+      "Status": true,
+      "Connections": false,
+      "Beneficiaries": true,
+      "ReportAI": false,
+      "Patents": false,
+      "OdpisKrs": false
+    }
+  ],
+  "PromoCodes": [
+    {
+      "Id": 1,
+      "Code": "fdb9be7f-8d4d-4591-9cf4-8368684db0c5",
+      "Label": null,
+      "AllowLabelRedemption": false,
+      "CreatedAt": "2026-05-20T12:45:27.2941929Z",
+      "ActiveFrom": "2026-05-20T12:45:27.294193Z",
+      "ExpiresAt": "2026-05-27T12:45:27.294193Z",
+      "Status": "Used",
+      "CreditAmount": 100
+    }
+  ]
+}

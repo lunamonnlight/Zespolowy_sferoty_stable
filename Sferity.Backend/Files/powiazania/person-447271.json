@@ -1,0 +1,154 @@
+{
+  "powiazaniaOrganizacji": {
+    "aktualne": {
+      "powiazaneOrganizacje": [
+        {
+          "id": 635012,
+          "nazwy": {
+            "pelna": "ALLEGRO.EU SPÓŁKA Z OGRANICZONĄ ODPOWIEDZIALNOŚCIĄ",
+            "skrocona": "ALLEGRO"
+          },
+          "numery": {
+            "duns": null,
+            "krs": "635012",
+            "nip": "5252674798",
+            "regon": "386767283"
+          },
+          "stan": {
+            "czyDofinansowanaPrzezUe": false,
+            "czyJestNaGwp": false,
+            "czyOtrzymalaPomocPubliczna": false,
+            "czyPozytkuPublicznego": false,
+            "czySpolkaSkarbuPanstwa": false,
+            "czyWykreslona": false,
+            "formaPrawna": "SPÓŁKA Z OGRANICZONĄ ODPOWIEDZIALNOŚCIĄ",
+            "pkdPrzewazajaceDzial": "Sprzedaż detaliczna prowadzona przez domy sprzedaży wysyłkowej lub Internet",
+            "wLikwidacji": false,
+            "wUpadlosci": false,
+            "wZawieszeniu": false,
+            "wielkosc": "duza_srednia"
+          },
+          "glownaOsoba": {
+            "id": 1139891,
+            "imionaINazwisko": "Marcin Kuśmierz"
+          },
+          "adres": {
+            "kod": "00-001",
+            "miejscowosc": "Warszawa",
+            "nrDomu": "11",
+            "nrMieszkania": "",
+            "panstwo": "Polska",
+            "poczta": "Warszawa",
+            "ulica": "Ratuszowa"
+          },
+          "kontakt": {
+            "emaile": [],
+            "www": ""
+          },
+          "krsRejestry": {
+            "rejestrPrzedsiebiorcowDataWpisu": "2010-01-01",
+            "rejestrPrzedsiebiorcowDataWykreslenia": "",
+            "rejestrStowarzyszenDataWpisu": "",
+            "rejestrStowarzyszenDataWykreslenia": ""
+          },
+          "krsWpisy": {
+            "najnowszyData": "2024-01-01",
+            "najnowszyNumer": 10,
+            "najnowszyPrzedWykresleniemData": "",
+            "najnowszyPrzedWykresleniemNumer": null,
+            "pierwszyData": "2010-01-01",
+            "wykresleniUprawomocnienieData": ""
+          },
+          "krsPowiazaniaLiczby": {
+            "aktualne": 2,
+            "przeszle": 12
+          },
+          "typ": "organizacja",
+          "krsPowiazaniaKwerendowane": [
+            {
+              "dataStart": "2018-03-21",
+              "dataKoniec": null,
+              "kierunek": "PASYWNY",
+              "opis": "",
+              "typ": "KRS_PROXY"
+            }
+          ]
+        },
+        {
+          "id": 9912001,
+          "nazwy": {
+            "pelna": "ALLEGRO PAY SPÓŁKA Z OGRANICZONĄ ODPOWIEDZIALNOŚCIĄ",
+            "skrocona": "ALLEGRO PAY"
+          },
+          "numery": {
+            "duns": null,
+            "krs": "0000991200",
+            "nip": "5272914433",
+            "regon": "389100200"
+          },
+          "stan": {
+            "czyDofinansowanaPrzezUe": false,
+            "czyJestNaGwp": false,
+            "czyOtrzymalaPomocPubliczna": false,
+            "czyPozytkuPublicznego": false,
+            "czySpolkaSkarbuPanstwa": false,
+            "czyWykreslona": false,
+            "formaPrawna": "SPÓŁKA Z OGRANICZONĄ ODPOWIEDZIALNOŚCIĄ",
+            "pkdPrzewazajaceDzial": "Pozostała finansowa działalność usługowa",
+            "wLikwidacji": false,
+            "wUpadlosci": false,
+            "wZawieszeniu": false,
+            "wielkosc": "duza_srednia"
+          },
+          "glownaOsoba": {
+            "id": 1139891,
+            "imionaINazwisko": "Marcin Kuśmierz"
+          },
+          "adres": {
+            "kod": "00-001",
+            "miejscowosc": "Warszawa",
+            "nrDomu": "11",
+            "nrMieszkania": "",
+            "panstwo": "Polska",
+            "poczta": "Warszawa",
+            "ulica": "Ratuszowa"
+          },
+          "kontakt": {
+            "emaile": [],
+            "www": ""
+          },
+          "krsRejestry": {
+            "rejestrPrzedsiebiorcowDataWpisu": "2010-01-01",
+            "rejestrPrzedsiebiorcowDataWykreslenia": "",
+            "rejestrStowarzyszenDataWpisu": "",
+            "rejestrStowarzyszenDataWykreslenia": ""
+          },
+          "krsWpisy": {
+            "najnowszyData": "2024-01-01",
+            "najnowszyNumer": 10,
+            "najnowszyPrzedWykresleniemData": "",
+            "najnowszyPrzedWykresleniemNumer": null,
+            "pierwszyData": "2010-01-01",
+            "wykresleniUprawomocnienieData": ""
+          },
+          "krsPowiazaniaLiczby": {
+            "aktualne": 2,
+            "przeszle": 3
+          },
+          "typ": "organizacja",
+          "krsPowiazaniaKwerendowane": [
+            {
+              "dataStart": "2018-03-21",
+              "dataKoniec": null,
+              "kierunek": "PASYWNY",
+              "opis": "",
+              "typ": "KRS_PROXY"
+            }
+          ]
+        }
+      ],
+      "powiazaneOsobyZProfilem": [],
+      "powiazaneOsobyBezProfilu": []
+    }
+  }
+}

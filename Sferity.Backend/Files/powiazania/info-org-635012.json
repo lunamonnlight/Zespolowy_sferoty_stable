@@ -1,0 +1,91 @@
+{
+  "podstawoweInformacje": {
+    "id": 635012,
+    "nazwy": {
+      "pelna": "ALLEGRO SPÓŁKA Z OGRANICZONĄ ODPOWIEDZIALNOŚCIĄ",
+      "skrocona": "ALLEGRO"
+    },
+    "numery": {
+      "duns": null,
+      "krs": 635012,
+      "nip": 5252674798,
+      "regon": 365331553
+    },
+    "stan": {
+      "czy_dofinansowana_przez_ue": false,
+      "czy_jest_na_gwp": null,
+      "czy_otrzymala_pomoc_publiczna": false,
+      "czy_pozytku_publicznego": false,
+      "czy_spolka_skarbu_panstwa": false,
+      "czy_wykreslona": false,
+      "forma_prawna": "SPÓŁKA Z OGRANICZONĄ ODPOWIEDZIALNOŚCIĄ",
+      "pkd_przewazajace_dzial": "Działalność usługowa w zakresie informacji",
+      "w_likwidacji": false,
+      "w_upadlosci": false,
+      "w_zawieszeniu": false,
+      "wielkosc": null
+    },
+    "glowna_osoba": {
+      "id": 1139891,
+      "imiona_i_nazwisko": "Marcin Paweł Kuśmierz"
+    },
+    "adres": {
+      "kod": "61-569",
+      "miejscowosc": "Poznań",
+      "nr_domu": "1B",
+      "nr_mieszkania": null,
+      "panstwo": "Polska",
+      "poczta": "Poznań",
+      "ulica": "Wierzbięcice"
+    },
+    "kontakt": {
+      "emaile": [
+        "prasa@allegro.pl\r",
+        "ir@allegro.eu\r",
+        "iod@allegro.pl"
+      ],
+      "www": "https://allegro.pl"
+    },
+    "krs_rejestry": {
+      "rejestr_przedsiebiorcow_data_wpisu": "2016-09-02",
+      "rejestr_przedsiebiorcow_data_wykreslenia": null,
+      "rejestr_stowarzyszen_data_wpisu": null,
+      "rejestr_stowarzyszen_data_wykreslenia": null
+    },
+    "krs_wpisy": {
+      "najnowszy_data": "2026-04-21",
+      "najnowszy_numer": 83,
+      "najnowszy_przed_wykresleniem_data": null,
+      "najnowszy_przed_wykresleniem_numer": null,
+      "pierwszy_data": "2016-09-02",
+      "wykreslenie_uprawomocnienie_data": null
+    },
+    "krs_powiazania_liczby": {
+      "aktualne": 11,
+      "przeszle": 46
+    },
+    "metadane": {
+      "krs_odpis_synchronizacja_data_czas": "2026-04-22 19:56:23",
+      "krs_rozdzialy_dostepne": [
+        "ogolny",
+        "akcje",
+        "przeksztalcenia",
+        "wzmianki"
+      ]
+    },
+    "typ": "organizacja"
+  },
+  "vatDane": null,
+  "powiazaniaOrganizacji": null,
+  "raportFinansowy": null,
+  "statusOrganizacji": null,
+  "beneficjenciRzeczywisci": null,
+  "patents": null,
+  "reportGuid": null,
+  "odpisKRS": {
+    "odpisAktualny": null,
+    "odpisPelny": null
+  },
+  "krsNumbers": null,
+  "typ": "Organizacja"
+}
