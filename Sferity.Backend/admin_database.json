@@ -48,7 +48,7 @@
       "Id": 4,
       "UserId": 1,
       "Name": "10",
-      "Amount": 300,
+      "Amount": 280.00,
       "Currency": "PLN"
     },
     {
@@ -276,6 +276,48 @@
     }
   ],
   "SearchLogs": [
+    {
+      "Id": 13,
+      "UserId": 1,
+      "Username": "Wisnia",
+      "SearchedNip": "7392854679",
+      "SearchedKrs": "53744",
+      "SearchTimestamp": "2026-05-20T13:57:20.9205358Z",
+      "IsSuccess": true,
+      "ErrorMessage": null,
+      "Cost": 10.00,
+      "IsRequest": false,
+      "Gus": false,
+      "Vat": false,
+      "Financial": false,
+      "Status": false,
+      "Connections": false,
+      "Beneficiaries": false,
+      "ReportAI": true,
+      "Patents": false,
+      "OdpisKrs": false
+    },
+    {
+      "Id": 12,
+      "UserId": 1,
+      "Username": "Wisnia",
+      "SearchedNip": "7392854679",
+      "SearchedKrs": "53744",
+      "SearchTimestamp": "2026-05-20T13:44:32.175466Z",
+      "IsSuccess": false,
+      "ErrorMessage": "Gemini API Key is not configured.",
+      "Cost": 10.00,
+      "IsRequest": false,
+      "Gus": false,
+      "Vat": false,
+      "Financial": false,
+      "Status": false,
+      "Connections": false,
+      "Beneficiaries": false,
+      "ReportAI": true,
+      "Patents": false,
+      "OdpisKrs": false
+    },
     {
       "Id": 11,
       "UserId": 0,
