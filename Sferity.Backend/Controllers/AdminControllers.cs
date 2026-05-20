@@ -8,7 +8,7 @@ namespace Sferity.Backend.Controllers;
 [Route("api/[controller]")]
 public class AdminController : ControllerBase
 {
-    private readonly string _dbPath = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "admin_database.json");
+    private readonly string _dbPath = "admin_database.json";
     public AdminController()
     {
         Console.WriteLine("==================================================");

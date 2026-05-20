@@ -1,4 +1,4 @@
-﻿{
+{
   "Users": [
     {
       "Id": 1,
@@ -27,7 +27,7 @@
       "Id": 1,
       "UserId": 0,
       "Name": "dadd",
-      "Amount": 15000,
+      "Amount": 14995.00,
       "Currency": "PLN"
     },
     {
@@ -48,7 +48,7 @@
       "Id": 4,
       "UserId": 1,
       "Name": "10",
-      "Amount": 200,
+      "Amount": 185.00,
       "Currency": "PLN"
     },
     {
@@ -69,7 +69,7 @@
       "Id": 7,
       "UserId": 2,
       "Name": "Portfel g\u0142\u00F3wny",
-      "Amount": 100,
+      "Amount": 90.00,
       "Currency": "PLN"
     }
   ],
@@ -267,6 +267,132 @@
   ],
   "SearchLogs": [
     {
+      "Id": 10,
+      "UserId": 2,
+      "Username": "M1myk",
+      "SearchedNip": "7392854679",
+      "SearchedKrs": "53744",
+      "SearchTimestamp": "2026-05-20T08:20:51.864483Z",
+      "IsSuccess": true,
+      "ErrorMessage": null,
+      "Cost": 5.00,
+      "IsRequest": false,
+      "Gus": false,
+      "Vat": false,
+      "Financial": false,
+      "Status": false,
+      "Connections": false,
+      "Beneficiaries": false,
+      "ReportAI": true,
+      "Patents": false,
+      "OdpisKrs": false
+    },
+    {
+      "Id": 9,
+      "UserId": 2,
+      "Username": "M1myk",
+      "SearchedNip": "7392854679",
+      "SearchedKrs": "53744",
+      "SearchTimestamp": "2026-05-20T08:19:46.4373245Z",
+      "IsSuccess": true,
+      "ErrorMessage": null,
+      "Cost": 5.00,
+      "IsRequest": false,
+      "Gus": false,
+      "Vat": false,
+      "Financial": false,
+      "Status": false,
+      "Connections": false,
+      "Beneficiaries": false,
+      "ReportAI": true,
+      "Patents": false,
+      "OdpisKrs": false
+    },
+    {
+      "Id": 8,
+      "UserId": 1,
+      "Username": "Wisnia",
+      "SearchedNip": "7392854679",
+      "SearchedKrs": "53744",
+      "SearchTimestamp": "2026-05-20T08:13:29.8539043Z",
+      "IsSuccess": true,
+      "ErrorMessage": null,
+      "Cost": 5.00,
+      "IsRequest": false,
+      "Gus": false,
+      "Vat": false,
+      "Financial": false,
+      "Status": false,
+      "Connections": false,
+      "Beneficiaries": false,
+      "ReportAI": true,
+      "Patents": false,
+      "OdpisKrs": false
+    },
+    {
+      "Id": 7,
+      "UserId": 1,
+      "Username": "Wisnia",
+      "SearchedNip": "7392854679",
+      "SearchedKrs": "53744",
+      "SearchTimestamp": "2026-05-20T08:08:28.8304244Z",
+      "IsSuccess": true,
+      "ErrorMessage": null,
+      "Cost": 5.00,
+      "IsRequest": false,
+      "Gus": false,
+      "Vat": false,
+      "Financial": false,
+      "Status": false,
+      "Connections": false,
+      "Beneficiaries": false,
+      "ReportAI": true,
+      "Patents": false,
+      "OdpisKrs": false
+    },
+    {
+      "Id": 6,
+      "UserId": 1,
+      "Username": "Wisnia",
+      "SearchedNip": "7392854679",
+      "SearchedKrs": "53744",
+      "SearchTimestamp": "2026-05-20T08:07:53.8787645Z",
+      "IsSuccess": true,
+      "ErrorMessage": null,
+      "Cost": 5.00,
+      "IsRequest": false,
+      "Gus": false,
+      "Vat": false,
+      "Financial": false,
+      "Status": false,
+      "Connections": false,
+      "Beneficiaries": false,
+      "ReportAI": true,
+      "Patents": false,
+      "OdpisKrs": false
+    },
+    {
+      "Id": 5,
+      "UserId": 0,
+      "Username": "",
+      "SearchedNip": "7392854679",
+      "SearchedKrs": "53744",
+      "SearchTimestamp": "2026-05-20T07:55:44.8565367Z",
+      "IsSuccess": true,
+      "ErrorMessage": null,
+      "Cost": 5.00,
+      "IsRequest": false,
+      "Gus": false,
+      "Vat": false,
+      "Financial": false,
+      "Status": false,
+      "Connections": false,
+      "Beneficiaries": false,
+      "ReportAI": true,
+      "Patents": false,
+      "OdpisKrs": false
+    },
+    {
       "Id": 1,
       "UserId": 1,
       "Username": "Wisnia",
@@ -350,5 +476,6 @@
       "Patents": false,
       "OdpisKrs": false
     }
-  ]
+  ],
+  "PromoCodes": []
 }
