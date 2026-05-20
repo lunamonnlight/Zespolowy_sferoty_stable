@@ -16,7 +16,7 @@ import DatePicker from 'primevue/datepicker'
 
 // POPRAWKA: Ustawiono Twój port serwera (5100)
 // Upewnij się, że ścieżka /api/PromoCodes zgadza się z Twoim kontrolerem C#
-const API_URL = 'http://localhost:5100/api/PromoCodes'
+const API_URL = 'http://localhost:5100/api/promocodes'
 const toast = useToast()
 
 // --- STAN ---

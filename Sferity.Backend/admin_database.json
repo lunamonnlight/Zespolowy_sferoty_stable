@@ -62,18 +62,48 @@
       "Id": 6,
       "UserId": 3,
       "Name": "mam dostep",
-      "Amount": 2137,
+      "Amount": 2237,
       "Currency": "PLN"
     },
     {
       "Id": 7,
       "UserId": 2,
       "Name": "Portfel g\u0142\u00F3wny",
-      "Amount": 90.00,
+      "Amount": 190.00,
       "Currency": "PLN"
     }
   ],
   "Logs": [
+    {
+      "Timestamp": "2026-05-20T12:44:33.2742239+02:00",
+      "Action": "U\u017Cytkownik ID:3 do\u0142adowa\u0142 100 PLN kodem 5225b0b1-3e57-494d-998a-0461ae95a045",
+      "User": "System"
+    },
+    {
+      "Timestamp": "2026-05-20T12:44:20.9424912+02:00",
+      "Action": "Wygenerowano kody (1 szt.) o warto\u015Bci 100 PLN",
+      "User": "System"
+    },
+    {
+      "Timestamp": "2026-05-20T12:44:03.8119322+02:00",
+      "Action": "U\u017Cytkownik ID:2 do\u0142adowa\u0142 100 PLN kodem 8a89e065-40b9-4e5d-84b5-2e713af42773",
+      "User": "System"
+    },
+    {
+      "Timestamp": "2026-05-20T12:43:55.0091467+02:00",
+      "Action": "Wygenerowano kody (1 szt.) o warto\u015Bci 100 PLN",
+      "User": "System"
+    },
+    {
+      "Timestamp": "2026-05-20T12:42:58.5793069+02:00",
+      "Action": "Zmieniono status blokady u\u017Cytkownika M1myk na False",
+      "User": "System"
+    },
+    {
+      "Timestamp": "2026-05-20T12:42:57.7564303+02:00",
+      "Action": "Zmieniono status blokady u\u017Cytkownika M1myk na True",
+      "User": "System"
+    },
     {
       "Timestamp": "2026-05-10T15:16:04.4889825+02:00",
       "Action": "Zmieniono status blokady u\u017Cytkownika M1myk na False",
@@ -477,5 +507,28 @@
       "OdpisKrs": false
     }
   ],
-  "PromoCodes": []
+  "PromoCodes": [
+    {
+      "Id": 1,
+      "Code": "8a89e065-40b9-4e5d-84b5-2e713af42773",
+      "Label": null,
+      "AllowLabelRedemption": false,
+      "CreatedAt": "2026-05-20T10:43:55.0083836Z",
+      "ActiveFrom": "2026-05-20T10:43:55.0085622Z",
+      "ExpiresAt": "2026-05-27T10:43:55.0087436Z",
+      "Status": "Used",
+      "CreditAmount": 100
+    },
+    {
+      "Id": 2,
+      "Code": "5225b0b1-3e57-494d-998a-0461ae95a045",
+      "Label": null,
+      "AllowLabelRedemption": false,
+      "CreatedAt": "2026-05-20T10:44:20.9424868Z",
+      "ActiveFrom": "2026-05-20T10:44:20.9424871Z",
+      "ExpiresAt": "2026-05-27T10:44:20.9424872Z",
+      "Status": "Used",
+      "CreditAmount": 100
+    }
+  ]
 }

@@ -9,7 +9,44 @@ import { useAuth } from '../composables/useAuth'
 const { currentUser } = useAuth()
 const data = ref({ balance: 0, currency: 'PLN', searchLogs: [] })
 const promoCode = ref('')
+const isRedeeming = ref(false)
 
+async function redeemPromoCode() {
+  if (!promoCode.value || !currentUser.value) return
+
+  isRedeeming.value = true
+  try {
+    // Sprawdzamy czy wpisano GUID czy Etykietę (GUID jest długi i ma myślniki)
+    const isGuid = promoCode.value.includes('-') && promoCode.value.length > 20
+
+    const payload = {
+      userId: currentUser.value.id,
+      code: isGuid ? promoCode.value : null,
+      label: isGuid ? null : promoCode.value.toUpperCase()
+    }
+
+    const res = await fetch('http://localhost:5100/api/promocodes/redeem', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify(payload)
+    })
+
+    if (res.ok) {
+      const result = await res.json()
+      alert(`Pomyślnie doładowano konto o ${result.creditAmount} PLN!`)
+      promoCode.value = ''
+      await fetchMyData() // KLUCZOWE: Odświeża saldo i logi na ekranie
+    } else {
+      const errorText = await res.text()
+      alert("Błąd: Kod jest nieprawidłowy, zużyty lub wygasł.")
+    }
+  } catch (e) {
+    console.error(e)
+    alert("Wystąpił błąd połączenia.")
+  } finally {
+    isRedeeming.value = false
+  }
+}
 async function fetchMyData() {
   if (!currentUser.value) return
   try {
@@ -98,8 +135,14 @@ onMounted(fetchMyData)
               <h2 class="text-xl font-bold mb-2">Kod promocyjny</h2>
               <p class="text-sm text-surface-400 mb-4">Wpisz kod, aby doładować portfel.</p>
               <div class="flex flex-col gap-3">
-                <InputText v-model="promoCode" placeholder="Np. START2026" class="w-full" />
-                <Button label="Aktywuj" icon="pi pi-ticket" @click="promoCode = ''" class="w-full" />
+                <InputText v-model="promoCode" placeholder="Np. START2026" class="w-full" @keyup.enter="redeemPromoCode" />
+                <Button
+                    label="Aktywuj kod"
+                    icon="pi pi-ticket"
+                    :loading="isRedeeming"
+                    @click="redeemPromoCode"
+                    class="w-full"
+                />
               </div>
             </div>
 

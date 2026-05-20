@@ -1,3 +1,5 @@
+using Sferity.Backend.Services;
+
 QuestPDF.Settings.License = QuestPDF.Infrastructure.LicenseType.Community;
 var builder = WebApplication.CreateBuilder(args);
 
@@ -7,7 +9,9 @@ builder.Services.AddCors(options => {
 });
 // Rejestracja serwisu AI dla kontrolerów
 builder.Services.AddHttpClient<Sferity.Backend.Servises.RaportAI>();
-
+builder.Services.AddScoped<IPolandTimeService, PolandTimeService>(); // TEGO BRAKOWAŁO
+builder.Services.AddScoped<IPromoCodeService, PromoCodeService>();
+builder.Services.AddScoped<PromoCodeExpiryService>();
 builder.Services
     .AddControllers()
     .AddJsonOptions(options =>

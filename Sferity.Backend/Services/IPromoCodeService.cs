@@ -7,7 +7,7 @@ namespace Sferity.Backend.Services
     {
         Task<IEnumerable<PromoCodeDto>> GenerateAsync(CreatePromoCodeRequest request);
         Task<PromoCodeDto?> PreviewAsync(PromoCodeIdentifierRequest request);
-        Task<PromoCodeDto?> RedeemAsync(PromoCodeIdentifierRequest request);
+        Task<PromoCodeDto?> RedeemAsync(PromoCodeIdentifierRequest request, int userId); 
         Task<IEnumerable<PromoCodeDto>> GetByIdentifierAsync(PromoCodeIdentifierRequest request);
         Task<IEnumerable<PromoCodeDto>> GetAllAsync();
         Task<int> ExpirePromoCodesAsync();

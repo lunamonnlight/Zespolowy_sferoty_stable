@@ -56,20 +56,25 @@ public class PromoCodesController : ControllerBase
     [ProducesResponseType(typeof(PromoCodeDto), StatusCodes.Status200OK)]
     [ProducesResponseType(StatusCodes.Status404NotFound)]
     [ProducesResponseType(StatusCodes.Status400BadRequest)]
-    public async Task<IActionResult> Redeem([FromBody] PromoCodeIdentifierRequest request)
+    public async Task<IActionResult> Redeem([FromBody] PromoCodeRedeemRequest request)
     {
-        if (request.Code == null && string.IsNullOrWhiteSpace(request.Label))
-            return BadRequest("Either a code or a label must be provided.");
-        
-        if (request.Code != null && !string.IsNullOrWhiteSpace(request.Label))
-            return BadRequest("Provide either a code or a label, not both.");
-
-        var result = await _service.RedeemAsync(request);
+        // Wywołujemy serwis z przekazanym userId z obiektu request
+        var result = await _service.RedeemAsync(new PromoCodeIdentifierRequest { 
+            Code = request.Code, 
+            Label = request.Label 
+        }, request.UserId);
 
         if (result == null)
-            return NotFound();
+            return BadRequest("Kod jest nieprawidłowy, został już użyty lub wygasł.");
 
         return Ok(result);
+    }
+
+    // Klasa pomocnicza dla endpointu Redeem
+    public class PromoCodeRedeemRequest {
+        public Guid? Code { get; set; }
+        public string? Label { get; set; }
+        public int UserId { get; set; } 
     }
     
     // Accepts either GUID or label as query params
