@@ -48,7 +48,7 @@
       "Id": 4,
       "UserId": 1,
       "Name": "10",
-      "Amount": 280.00,
+      "Amount": 380.00,
       "Currency": "PLN"
     },
     {
@@ -69,11 +69,31 @@
       "Id": 7,
       "UserId": 2,
       "Name": "Portfel g\u0142\u00F3wny",
-      "Amount": 190.00,
+      "Amount": 290.00,
       "Currency": "PLN"
     }
   ],
   "Logs": [
+    {
+      "Timestamp": "2026-05-20T16:34:48.399816+02:00",
+      "Action": "DO\u0141ADOWANIE: Wisnia u\u017Cy\u0142 kodu 572ea09b-69f4-438d-ad2b-7021bbf3f700 (\u002B100 PLN). Nowe saldo: 380,00 PLN",
+      "User": "System"
+    },
+    {
+      "Timestamp": "2026-05-20T16:34:40.973126+02:00",
+      "Action": "Wygenerowano kody (1 szt.) o warto\u015Bci 100 PLN",
+      "User": "System"
+    },
+    {
+      "Timestamp": "2026-05-20T16:22:17.4956504+02:00",
+      "Action": "U\u017Cytkownik ID:2 do\u0142adowa\u0142 100 PLN kodem 833d6e1c-cb51-4a21-bfa2-db8eb734e509",
+      "User": "System"
+    },
+    {
+      "Timestamp": "2026-05-20T16:21:50.6891412+02:00",
+      "Action": "Wygenerowano kody (1 szt.) o warto\u015Bci 100 PLN",
+      "User": "System"
+    },
     {
       "Timestamp": "2026-05-20T14:45:35.2987146+02:00",
       "Action": "U\u017Cytkownik ID:1 do\u0142adowa\u0142 100 PLN kodem fdb9be7f-8d4d-4591-9cf4-8368684db0c5",
@@ -554,11 +574,27 @@
     {
       "Id": 1,
       "Code": "fdb9be7f-8d4d-4591-9cf4-8368684db0c5",
-      "Label": null,
-      "AllowLabelRedemption": false,
       "CreatedAt": "2026-05-20T12:45:27.2941929Z",
       "ActiveFrom": "2026-05-20T12:45:27.294193Z",
       "ExpiresAt": "2026-05-27T12:45:27.294193Z",
+      "Status": "Used",
+      "CreditAmount": 100
+    },
+    {
+      "Id": 2,
+      "Code": "833d6e1c-cb51-4a21-bfa2-db8eb734e509",
+      "CreatedAt": "2026-05-20T14:21:50.6891371Z",
+      "ActiveFrom": "2026-05-20T14:21:50.6891372Z",
+      "ExpiresAt": "2026-05-27T14:21:50.6891372Z",
+      "Status": "Used",
+      "CreditAmount": 100
+    },
+    {
+      "Id": 3,
+      "Code": "572ea09b-69f4-438d-ad2b-7021bbf3f700",
+      "CreatedAt": "2026-05-20T14:34:40.9731211Z",
+      "ActiveFrom": "0001-01-01T00:00:00",
+      "ExpiresAt": "2026-05-27T14:34:40.9731212Z",
       "Status": "Used",
       "CreditAmount": 100
     }

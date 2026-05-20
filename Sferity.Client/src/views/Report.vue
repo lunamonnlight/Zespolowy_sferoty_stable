@@ -929,7 +929,15 @@ function generateCustomReport() {
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" width="20" height="20" fill="currentColor" class="shrink-0"><path d="M224,152a8,8,0,0,1-8,8H192v16h16a8,8,0,0,1,0,16H192v16a8,8,0,0,1-16,0V152a8,8,0,0,1,8-8h32A8,8,0,0,1,224,152ZM92,172a28,28,0,0,1-28,28H56v8a8,8,0,0,1-16,0V152a8,8,0,0,1,8-8H64A28,28,0,0,1,92,172Zm-16,0a12,12,0,0,0-12-12H56v24h8A12,12,0,0,0,76,172Zm88,8a36,36,0,0,1-36,36H112a8,8,0,0,1-8-8V152a8,8,0,0,1,8-8h16A36,36,0,0,1,164,180Zm-16,0a20,20,0,0,0-20-20h-8v40h8A20,20,0,0,0,148,180ZM40,112V40A16,16,0,0,1,56,24h96a8,8,0,0,1,5.66,2.34l56,56A8,8,0,0,1,216,88v24a8,8,0,0,1-16,0V96H152a8,8,0,0,1-8-8V40H56v72a8,8,0,0,1-16,0ZM160,80h28.69L160,51.31Z"></path></svg>
           <span class="text-sm font-medium">Stwórz raport</span>
         </router-link>
-
+        <!-- 5. POWIĄZANIA -->
+        <router-link
+            to="/connections"
+            class="flex items-center w-full rounded-lg transition-all duration-200 cursor-pointer px-3 py-2.5 my-1 gap-3 text-surface-300 hover:bg-surface-700/40 hover:text-surface-100"
+            active-class="bg-primary-500/15 text-primary-400 font-bold"
+        >
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" width="20" height="20" fill="currentColor" class="shrink-0"><path d="M200,144a31.84,31.84,0,0,0-19.53,6.68l-46.19-33a32.17,32.17,0,0,0,0-19.38l46.19-33A32,32,0,1,0,168,48a31.84,31.84,0,0,0,19.53,6.68L141.34,87.64a32,32,0,1,0,0,80.72l46.19,33A31.84,31.84,0,0,0,168,208a32,32,0,1,0,32-64Zm0-128a16,16,0,1,1-16,16A16,16,0,0,1,200,16ZM96,144a16,16,0,1,1,16-16A16,16,0,0,1,96,144Zm104,80a16,16,0,1,1,16-16A16,16,0,0,1,200,224Z"></path></svg>
+          <span class="text-sm font-medium">Powiązania</span>
+        </router-link>
       </section>
 
       <!-- Glowna sekcja-->

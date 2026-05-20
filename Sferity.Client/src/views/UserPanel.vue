@@ -19,9 +19,9 @@ async function redeemPromoCode() {
     const isGuid = promoCode.value.includes('-') && promoCode.value.length > 20
     const payload = {
       userId: currentUser.value.id,
-      code: isGuid ? promoCode.value : null,
-      label: isGuid ? null : promoCode.value.toUpperCase()
+      code: promoCode.value.trim() // Przesyłamy po prostu string kodu
     }
+
     const res = await fetch('http://localhost:5100/api/promocodes/redeem', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },

@@ -18,16 +18,11 @@ namespace Sferity.Backend.Data
                 .HasIndex(p => p.Code)
                 .IsUnique();
             
-            modelBuilder.Entity<PromoCode>()
-                .HasIndex(p => p.Label);
 
             modelBuilder.Entity<PromoCode>()
                 .Property(p => p.Status)
                 .HasConversion(new EnumToStringConverter<PromoCodeStatus>());
             
-            modelBuilder.Entity<PromoCode>()
-                .Property(p => p.Label)
-                .HasMaxLength(100);
         }
     }
 }

@@ -43,13 +43,11 @@ public class PromoCodeService : IPromoCodeService
         {
             var promo = new PromoCode
             {
-                Id = (db.PromoCodes.Count > 0 ? db.PromoCodes.Max(x => x.Id) : 0) + i + 1,
-                Code = Guid.NewGuid(),
-                Label = request.Label?.ToUpper(),
+                Id = db.PromoCodes.Count + 1,
+                Code = Guid.NewGuid(), // Tylko to nas interesuje
                 CreditAmount = request.CreditAmount,
                 CreatedAt = DateTime.UtcNow,
-                ActiveFrom = DateTime.UtcNow,
-                ExpiresAt = DateTime.UtcNow.AddDays(request.ExpirationDays ?? 7),
+                ExpiresAt = DateTime.UtcNow.AddDays(request.ExpirationDays),
                 Status = PromoCodeStatus.Active
             };
             db.PromoCodes.Add(promo);
@@ -68,31 +66,46 @@ public class PromoCodeService : IPromoCodeService
     public async Task<PromoCodeDto?> RedeemAsync(PromoCodeIdentifierRequest request, int userId)
     {
         var db = LoadDb();
-        // 1. Znajdź kod w bazie JSON
-        var promo = db.PromoCodes.FirstOrDefault(x =>
-            (request.Code.HasValue && x.Code == request.Code.Value) ||
-            (!string.IsNullOrWhiteSpace(request.Label) && x.Label == request.Label.Trim().ToUpper() &&
-             x.AllowLabelRedemption)
-        );
 
-        if (promo == null || promo.Status != PromoCodeStatus.Active) return null;
-        
-        // 2. Znajdź fundusz użytkownika
+        // 1. Znajdź kod w bazie JSON (szukamy TYLKO po unikalnym GUID)
+        // Zmienna 'request.Code' musi zostać przekazana z frontendu
+        var promo = db.PromoCodes.FirstOrDefault(x => x.Code == request.Code && x.Status == PromoCodeStatus.Active);
+
+        // Walidacja: czy kod istnieje i czy nie wygasł
+        if (promo == null || _time.IsExpired(promo.ExpiresAt)) 
+            return null;
+    
+        // 2. Znajdź fundusz użytkownika (lub stwórz go, jeśli nie istnieje)
         var fund = db.Funds.FirstOrDefault(f => f.UserId == userId);
-        if (fund == null) {
-            fund = new AdminFund { Id = db.Funds.Count + 1, UserId = userId, Name = "Portfel główny", Amount = 0 };
+        if (fund == null) 
+        {
+            fund = new AdminFund 
+            { 
+                Id = db.Funds.Any() ? db.Funds.Max(f => f.Id) + 1 : 1, 
+                UserId = userId, 
+                Name = "Portfel główny", 
+                Amount = 0,
+                Currency = "PLN"
+            };
             db.Funds.Add(fund);
         }
 
-        // 3. Dodaj środki i spal kod
+        // 3. DODAJ ŚRODKI I OZNACZ KOD JAKO ZUŻYTY
         fund.Amount += promo.CreditAmount;
         promo.Status = PromoCodeStatus.Used;
 
-        // 4. Logowanie dla admina
-        db.Logs.Insert(0, new AdminLog {
+        // Pobieramy username dla ładniejszego logu (opcjonalnie)
+        var user = db.Users.FirstOrDefault(u => u.Id == userId);
+        string name = user?.Username ?? $"ID:{userId}";
+
+        // 4. Logowanie dla admina (usunięto wzmianki o Label)
+        db.Logs.Insert(0, new AdminLog 
+        {
             Timestamp = DateTime.Now,
-            Action = $"Użytkownik ID:{userId} doładował {promo.CreditAmount} PLN kodem {promo.Label ?? promo.Code.ToString()}"
+            Action = $"DOŁADOWANIE: {name} użył kodu {promo.Code} (+{promo.CreditAmount} PLN). Nowe saldo: {fund.Amount} PLN",
+            User = "System"
         });
+
         SaveDb(db);
         return promo.ToDto();
     }

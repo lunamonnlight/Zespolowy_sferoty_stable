@@ -9,8 +9,6 @@ namespace Sferity.Backend.Models
     {
         public int Id { get; set; }
         public Guid Code { get; set; }
-        public string? Label { get; set; }
-        public bool AllowLabelRedemption { get; set; } = false;
         public DateTime CreatedAt { get; set; }
         public DateTime ActiveFrom { get; set; } 
         public DateTime ExpiresAt { get; set; }

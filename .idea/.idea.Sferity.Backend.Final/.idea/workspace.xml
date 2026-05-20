@@ -11,7 +11,15 @@
   <component name="ChangeListManager">
     <list default="true" id="625d59b0-021b-45f0-8a3b-78c173a834e3" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Sferity.Backend.Final/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Sferity.Backend.Final/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sferity.Client/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/Sferity.Client/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sferity.Backend/DTOs/Requests/CreatePromoCodeRequest.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Sferity.Backend/DTOs/Requests/CreatePromoCodeRequest.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sferity.Backend/Data/AppDbContext.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Sferity.Backend/Data/AppDbContext.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sferity.Backend/Extensions/PromoCodeExtensions.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Sferity.Backend/Extensions/PromoCodeExtensions.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sferity.Backend/Models/PromoCode.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Sferity.Backend/Models/PromoCode.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sferity.Backend/Services/PromoCodeService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Sferity.Backend/Services/PromoCodeService.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sferity.Backend/admin_database.json" beforeDir="false" afterPath="$PROJECT_DIR$/Sferity.Backend/admin_database.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sferity.Client/src/components/PromoCodeComponent.vue" beforeDir="false" afterPath="$PROJECT_DIR$/Sferity.Client/src/components/PromoCodeComponent.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sferity.Client/src/views/Report.vue" beforeDir="false" afterPath="$PROJECT_DIR$/Sferity.Client/src/views/Report.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sferity.Client/src/views/UserPanel.vue" beforeDir="false" afterPath="$PROJECT_DIR$/Sferity.Client/src/views/UserPanel.vue" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -37,6 +45,7 @@
   }
 }</component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/Sferity.Backend/bin/Debug/net8.0/admin_database.json" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Sferity.Client/jsconfig.json" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Sferity.Client/node_modules/primevue/vetur-tags.json" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Sferity.Client/node_modules/primevue/web-types.json" root0="FORCE_HIGHLIGHTING" />
@@ -86,7 +95,7 @@
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
     "npm.dev.executor": "Run",
-    "ts.external.directory.path": "C:\\Program Files\\JetBrains\\JetBrains Rider 2025.3.3\\plugins\\javascript-plugin\\jsLanguageServicesImpl\\external",
+    "ts.external.directory.path": "C:\\Users\\wisni\\RiderProjects\\Zespolowy_sferoty_stable\\Sferity.Client\\node_modules\\typescript\\lib",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
@@ -254,7 +263,15 @@
       <option name="project" value="LOCAL" />
       <updated>1779285547229</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="powinno teraz działać kurwa">
+      <option name="closed" value="true" />
+      <created>1779286801157</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1779286801157</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -282,7 +299,8 @@
     <MESSAGE value="please w kncu dzialaj" />
     <MESSAGE value="idz sobie" />
     <MESSAGE value="tego zabrakło" />
-    <option name="LAST_COMMIT_MESSAGE" value="tego zabrakło" />
+    <MESSAGE value="powinno teraz działać kurwa" />
+    <option name="LAST_COMMIT_MESSAGE" value="powinno teraz działać kurwa" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
